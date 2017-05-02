@@ -1,0 +1,6 @@
+View/Account/Register.cshtml - m.FullName
+
+Models/AccountViewModels.cs - FullName
+Models/ApplicationUser.cs - FullName
+
+Controllers/AccountController.cs - model.FullName

@@ -1,0 +1,13 @@
+League standings:
+1. BULGARIA 8
+2. GERMANY 8
+3. ITALY 8
+4. ENGLAND 7
+5. RUSSIA 7
+6. FRANCE 5
+7. DENMARK 4
+8. SWEDEN 4
+Top 3 scored goals:
+- GERMANY -> 13
+- ITALY -> 13
+- BULGARIA -> 10

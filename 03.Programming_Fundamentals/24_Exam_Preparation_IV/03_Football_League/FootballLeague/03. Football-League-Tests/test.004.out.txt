@@ -1,0 +1,8 @@
+League standings:
+1. BULGARIA 10
+2. SPAIN 7
+3. FRANCE 3
+Top 3 scored goals:
+- BULGARIA -> 19
+- FRANCE -> 10
+- SPAIN -> 7

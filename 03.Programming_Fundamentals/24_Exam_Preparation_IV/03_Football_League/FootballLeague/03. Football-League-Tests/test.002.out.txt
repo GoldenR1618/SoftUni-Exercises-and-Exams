@@ -1,0 +1,8 @@
+League standings:
+1. BULGARIA 4
+2. RUSSIA 3
+3. ENGLAND 1
+Top 3 scored goals:
+- BULGARIA -> 10
+- ENGLAND -> 4
+- RUSSIA -> 3
