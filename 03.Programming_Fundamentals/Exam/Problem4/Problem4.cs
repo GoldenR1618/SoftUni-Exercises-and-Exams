@@ -1,80 +1,104 @@
-﻿namespace Problem4
+﻿namespace TechFundamentalsExam
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using System.Numerics;
-    using System.Text.RegularExpressions;
+    using System.Collections.Generic;
 
-    public class Problem4
+    public sealed class Legion
     {
-        public static void Main(string[] args)
+        public Legion(string name, long activity)
+        {
+            this.Name = name;
+            this.Activity = activity;
+            this.Soldiers = new Dictionary<string, long>();
+        }
+
+        public string Name { get; private set; }
+
+        public long Activity { get; set; }
+
+        public Dictionary<string, long> Soldiers { get; set; }
+
+        public override string ToString()
+        {
+            return $"{this.Activity} : {this.Name}";
+        }
+    }
+
+    class Startup
+    {
+        static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-
-            Dictionary<string, Dictionary<string, Dictionary<long, long>>> dictionary = new Dictionary<string, Dictionary<string, Dictionary<long, long>>>();
+            var legions = new Dictionary<string, Legion>();
 
             for (int i = 0; i < n; i++)
             {
-                string[] inputArr = Console.ReadLine().Split(new string[] { " = ", " -> ", ":" }, StringSplitOptions.RemoveEmptyEntries).ToArray();
+                string[] input = Console.ReadLine().Split(new[] { '=', ' ', ':', '-', '>' }, StringSplitOptions.RemoveEmptyEntries);
+                long lastActivity = long.Parse(input[0]);
+                string legionName = input[1];
+                string soldierType = input[2];
+                long soldierCount = long.Parse(input[3]);
 
-                long lastActivity = long.Parse(inputArr[0]);
-                string legionName = inputArr[1];
-                string soldierType = inputArr[2];
-                long soldierCount = long.Parse(inputArr[3]);
-
-                if (dictionary.ContainsKey(lastActivity))
+                if (legions.ContainsKey(legionName))
                 {
-                    dictionary[lastActivity] = new Dictionary<string, Dictionary<string, long>>();
-                }
-                else
-                {
-
-                }
-
-                
-
-
-
-                if (dictionary.ContainsKey(legionName))      //If a given legion already exists
-                {
-                    if (dictionary[legionName].ContainsKey(soldierType))
+                    if (legions[legionName].Soldiers.ContainsKey(soldierType))
                     {
-                        dictionary[legionName][soldierType][lastActivity] += soldierCount;
+                        legions[legionName].Soldiers[soldierType] += soldierCount;
                     }
                     else
                     {
-                        dictionary[legionName][soldierType].Add(lastActivity, soldierCount);
-                    }      
-                }
+                        legions[legionName].Soldiers.Add(soldierType, soldierCount);
+                    }
 
-                if (true)
+                    if (legions[legionName].Activity < lastActivity)
+                    {
+                        legions[legionName].Activity = lastActivity;
+                    }
+                }
+                else
                 {
-
+                    legions.Add(legionName, new Legion(legionName, lastActivity));
+                    legions[legionName].Soldiers.Add(soldierType, soldierCount);
                 }
-
-
-
-                if (!dictionary[lastActivity][legionName].ContainsKey(soldierType))
-                {
-                    dictionary[lastActivity][legionName][soldierType] = 0;
-                }
-
-                dictionary[lastActivity][legionName][soldierType] += soldierCount;
             }
 
-            Console.WriteLine();
+            string[] outputFormat = Console.ReadLine().Split(new[] { '\\' }, StringSplitOptions.None);
 
-            foreach (var item1 in dictionary)
+            if (outputFormat.Length > 1)
             {
-                foreach (var item2 in item1.Value)
+                long activity = long.Parse(outputFormat[0]);
+                string soldierType = outputFormat[1];
+                var found = new Dictionary<string, long>();
+
+                foreach (var legion in legions)
                 {
-                    foreach (var item3 in item2.Value.OrderByDescending(x => x.Value).ThenBy(x => x.Key))
+                    if (legion.Value.Activity >= activity)
                     {
-                        Console.WriteLine("{0} -> {1} -> {2} -> {3}", item1.Key, string.Join(", ", item2.Key), string.Join(", ", item3.Key), string.Join(", ", item3.Value));
+                        continue;
                     }
+
+                    foreach (var soldier in legion.Value.Soldiers)
+                    {
+                        if (soldier.Key == soldierType)
+                        {
+                            found.Add(legion.Key, soldier.Value);
+                        }
+                    }
+                }
+
+                foreach (var item in found.OrderByDescending(x => x.Value))
+                {
+                    Console.WriteLine($"{item.Key} -> {item.Value}");
+                }
+            }
+            else
+            {
+                var foundWithType = legions.Where(x => x.Value.Soldiers.Keys.Contains(outputFormat[0]));
+
+                foreach (var soldier in foundWithType.OrderByDescending(x => x.Value.Activity))
+                {
+                    Console.WriteLine(soldier.Value);
                 }
             }
         }

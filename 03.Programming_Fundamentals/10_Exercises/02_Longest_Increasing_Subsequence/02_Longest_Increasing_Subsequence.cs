@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _02_Longest_Increasing_Subsequence
+﻿namespace _02_Longest_Increasing_Subsequence
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     class Longest_Increasing_Subsequence
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
-   
+
         }
     }
 }
