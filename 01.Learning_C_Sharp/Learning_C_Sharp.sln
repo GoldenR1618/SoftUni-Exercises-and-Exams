@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cool_Methods", "Cool_Method
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Стекове_и_Опашки", "Стекове_и_Опашки\Стекове_и_Опашки.csproj", "{767CAD5C-3293-4048-8C34-583B1F8F34A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Матрици", "Матрици\Матрици.csproj", "{C1CAA585-7D7B-4035-B5F7-A5E9826203DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{767CAD5C-3293-4048-8C34-583B1F8F34A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{767CAD5C-3293-4048-8C34-583B1F8F34A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{767CAD5C-3293-4048-8C34-583B1F8F34A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1CAA585-7D7B-4035-B5F7-A5E9826203DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1CAA585-7D7B-4035-B5F7-A5E9826203DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1CAA585-7D7B-4035-B5F7-A5E9826203DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1CAA585-7D7B-4035-B5F7-A5E9826203DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
