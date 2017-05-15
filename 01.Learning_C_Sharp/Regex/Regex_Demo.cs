@@ -14,6 +14,8 @@
             //[abc] matches any character that is either a, b or c
             //[^abc] – matches any character that is not a, b or c
             //[0-9] - Character range: Мatches any digit frm 0 to 9
+            //[a|b] - a или b.
+
             //\w – Matches any word character (a-z, A-Z, 0-9, _)
             //\W – Matches any non - word character(the opposite of \w)
             //\s – Matches any white - space character
@@ -22,31 +24,48 @@
             //\D – Matches any non - decimal digit(opposite of \d)
             //\b - задава граница на стринга - \b[a-zA-Z][a-zA-Z0-9_]{2,24}\b
 
+            //\t - tab
+            //\n - new line
+            //\+ - + - escape +
+            //\* - * - escape * 
+            //\? - ? - escape ?
+
+
 
             //Quantifiers
             //* - Matches the previous element zero or more times
             //+ - Matches the previous element one or more times
             //? - Matches the previous element zero or one time
 
+
+
             //Anchors
             //^ -The match must start at the beginning of the string or line
             //$ -The match must occur at the end of the string
-            //Пример - ^\w{6,12}$
+            //Пример - ^\w{6,12}$ - user name validation - Започваш с дума от 6 до 12 символа и завършваш само с това. Нищо след нея няма.
+            //{6,12} - от 6 до 12. {6,} - минимум 6 символа. {6} - точно 6 символа.
 
             //  \d\s\d{3}s\d{3}-\d{3}   - валидиране на 0 878 123-456       - {3,} - ПОНЕ 3 СИМВОЛА! - {3, 6} - от 3 до 6 символа
             //                (-|\/)    - валидираме и "/" освен "-" като символ. С тази "\" ескейпваме.
 
+
+
             //Grouping Constructs
             //(subexpression) - captures the matched subexpression and assigns it a number
             //\d{2}-(\w{3})-\d{4} => 22-Jan-2015 - запазва Jan под номер 1
-            //(?:subexpression) – Defines a non-capturing group - дефинира група, но нея номерира
+            //(?<name>subexpression) - Captures the matched subexpression into a named group
+            //(?:subexpression) – Defines a non-capturing group - дефинира група, която НЕ СЕ прихваща.
             //^(?:Hi|hello),\s*(\w+)$ => Hi, Peter - мачва Peter.
 
+
+
             //Backreference Constructs - извикване на дефинирани групи
-            //\number – matches the value of a numbered subexpression
+            //\number – matches the value of a numbered subexpression. Извикване вътре в реджекса, номера на дефинирана група (преизползване на група).
             //\d{2}(-|\/)\d{2}\1\d{4} => мачва 22-12-2015 или 05/08/2016 - \1 извиква група 1
             //\k<name> – matches the value of a named expression - можем да именоваме групите
             //\d{2}(?<del>-|\/)\d{2}\k<del>\d{4} => мачва 22-12-2015 или 05/08/2016 - ?<del> - именоване на група - \k<del> извикване на именована група
+
+
 
             //Regex in VS -> using System.Text.RegularExpressions 
             string text2 = "Today is 2015-05-11";
@@ -55,6 +74,8 @@
             Regex regex2 = new Regex(pattern2);
             bool containsValidDate = regex2.IsMatch(text2);
             Console.WriteLine(containsValidDate); // True
+
+
 
             //Checking for a Single Match
             //Match(string text) – returns the first match that corresponds to the pattern
@@ -66,6 +87,9 @@
             Console.WriteLine("Matched text: \"{0}\"", match.Groups[0]);
             Console.WriteLine("Name: {0}", match.Groups[1]); // Nakov
             Console.WriteLine("Number: {0}", match.Groups[2]); // 123
+            //0 - целият текст. 1 - първа обособена група. 2 - втора...
+
+
 
             //Matches(string text) – returns a collection of matching strings that correspond to the pattern
             string text3 = "Nakov: 123, Branson: 456";
@@ -76,12 +100,14 @@
             foreach (Match match3 in matches)
             {
                 Console.WriteLine("Name: {0}", match3.Groups[1]);   //Groups[0] - вади целите групи (Nakov: 123),
-                                                                    //Group[1] - вади само първите части от групите (Nakov),
-                                                                    //Group[2] - вади само вторите части от групите (123)
+                                                                    //Group[1] - вади само първата група от съвпаденията (Nakov),
+                                                                    //Group[2] - вади само втората група от съвпаденията (123)
             }
             // Found 2 matches
             // Name: Nakov
             // Name: Branson
+
+
 
             //Replacing With Regex
             //Replace(string text, string replacement) – replaces all strings that match the pattern with the provided replacement
@@ -93,8 +119,12 @@
             Console.WriteLine(result4);
             // Nakov: 999, Branson: 999
 
+
+
             //Да се направи валидатор на мейли от типа: test_test@som.com, te@tes.te
             //\w{2,}@[A-Za-z0-9]{3,}\.[A-Za-z]{2,4}
+
+
 
             //Splitting With Regex
             //Split(string text) – splits the text by the pattern
