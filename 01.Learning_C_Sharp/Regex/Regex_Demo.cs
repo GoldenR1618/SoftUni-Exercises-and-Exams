@@ -67,6 +67,23 @@
 
 
 
+            //Positive and Negative Lookahead
+            //Negative Lookahead - a(?!b) - Match "a" if not followed by a "b".
+            //Positive Lookahead - a(?=b) - Match "a" if followed by a "b".
+
+
+
+            //Positive and Negative Lookbehind
+            //Negative Lookbehind - (?<!b)a - Match "a" if not preceded by a "b".
+            //Positive Lookbehind - (?<=b)a - Match "a" if preceded by a "b".
+
+
+
+            //.*? - хва]a всичко до първияt срещнат препинателен знак.
+            //\btext\b - word boundary.
+
+
+
             //Regex in VS -> using System.Text.RegularExpressions 
             string text2 = "Today is 2015-05-11";
             string pattern2 = @"\d{4}-\d{2}-\d{2}";
