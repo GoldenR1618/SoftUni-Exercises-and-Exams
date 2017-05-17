@@ -9,13 +9,15 @@
         {
             string text = Console.ReadLine();
 
-            string pattern = @"^\+\d{3}( |-)\d{1}\1\d{3}\1\d{4}$";
-            Regex regex = new Regex(pattern);
+            Regex regex = new Regex(@"^\+359-\d-\d{3}-\d{4}$");
+            Regex regexTwo = new Regex(@"^\+359 \d \d{3} \d{4}$");
 
             while (text != "end")
             {
-                Match matche = regex.Match(text);
-                Console.WriteLine(matche.Value);
+                if (regex.IsMatch(text) || regexTwo.IsMatch(text))
+                {
+                    Console.WriteLine(text);
+                }
 
                 text = Console.ReadLine();
             }
