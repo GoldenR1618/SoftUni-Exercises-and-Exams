@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cat.cs" />
     <Compile Include="Обекти_и_Класове.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

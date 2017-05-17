@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Обекти_и_Класове
 {
-    class Обекти_и_Класове
+    public class Обекти_и_Класове
     {
-        static void Main(string[] args)
+        public void Main(string[] args)
         {
             //Дефиниране на обект от тип котка:
             Cat firstCat = new Cat();
@@ -73,6 +73,36 @@ namespace Обекти_и_Класове
             var randomNumber = random.Next(2, 6);   //Ще генерира произволно число от 2 до 6-1 -> 5.
             Console.WriteLine(randomNumber);
 
+        }
+    }
+
+    public class Cat
+    {
+        public string Name { get; set; }
+
+        public int Age { get; set; }
+
+        public string Color { get; set; }
+
+        public bool IsAsleep { get; set; }
+
+        public string SayHello()
+        {
+            if (IsAsleep)
+            {
+                return "I am sleeping, ask me later!";
+            }
+            return $"Hi, I am {Name}! I am {Age} years old!";
+        }
+
+        public void GoToSleep()
+        {
+            IsAsleep = true;
+        }
+
+        public void Awake()
+        {
+            IsAsleep = false;
         }
     }
 }
