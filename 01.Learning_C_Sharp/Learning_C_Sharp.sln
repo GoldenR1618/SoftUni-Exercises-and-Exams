@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.4
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Цикли", "Цикли\Цикли.csproj", "{F5389F3A-9EC6-4776-BA0B-9B10A971EABA}"
 EndProject
@@ -44,6 +44,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Стекове_и_Опашки", "Стекове_и_Опашки\Стекове_и_Опашки.csproj", "{767CAD5C-3293-4048-8C34-583B1F8F34A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Матрици", "Матрици\Матрици.csproj", "{C1CAA585-7D7B-4035-B5F7-A5E9826203DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functional Programming", "Functional Programming\Functional Programming.csproj", "{EC7DC234-CA9C-4154-B2B8-23E9CACC1634}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{C1CAA585-7D7B-4035-B5F7-A5E9826203DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1CAA585-7D7B-4035-B5F7-A5E9826203DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1CAA585-7D7B-4035-B5F7-A5E9826203DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC7DC234-CA9C-4154-B2B8-23E9CACC1634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC7DC234-CA9C-4154-B2B8-23E9CACC1634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC7DC234-CA9C-4154-B2B8-23E9CACC1634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC7DC234-CA9C-4154-B2B8-23E9CACC1634}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
