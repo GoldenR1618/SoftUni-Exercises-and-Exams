@@ -11,23 +11,24 @@
     {
         public static void Main(string[] args)
         {
-            //1. Instead of writing the method we can do:
-            Action<string> print = message => Console.WriteLine(message);
+            //Instead of writing the method we can do:
+            Action<string> print = message => Console.WriteLine(message);   //In .NET Action<T> is a void method.
 
-            //1. Then we use it like that:
+            //Then we use it like that:
             print("pesho");
             print(5.ToString());
 
 
 
-            //2. We can use Func<T, TResult>
-            Func<int, int> increment = number => number + 1;
+            //We can use Func<T, TResult>
+            //In.NET Func<T, TResult> is a method that returns type TResult
+            Func<int, int> increment = number => number + 1;    //Последният ТИП в <> указва типа данни който ВРЪЩАМЕ.
             int a = increment(5);
-            int b = increment(a);
+            int b = increment(a);            
 
 
 
-            //3. We can use the method like that:
+            //1. We can use the method like that:
             int c = 5;
             int d = Operation(c, n => n * 5);
             int e = Operation(c, n => n - 3);
@@ -35,9 +36,15 @@
 
 
 
-            //4. We can filter collections using Func<T>:
+            //2. We can filter collections using Func<T>:
             List<int> list = new List<int> { 2, 5, -4, -1, 54, 4 };
-            List<int> evenNums = Filter(list, num => num % 2 == 0);
+            List<int> evenNums = Filter(list, num => num % 2 == 0); //Все едно ползваме var evenNums = list.Where(num => num % 2 == 0).
+
+
+
+            //3. We can filter collections using extension collection and Func<T>:
+            List<int> list2 = new List<int> { 2, 5, -4, -1, 54, 4 };
+            List<int> evenNums2 = list2.ExtFilter(num => num % 2 == 0);
 
 
 
@@ -46,27 +53,15 @@
             Expression<Func<int>> myExpr = () => 1;
         }
 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-        //1. In .NET Action<T> is a void method:
-        public static void Print(string message)
-        {
-            Console.WriteLine(message);
-        }
-
-        //2. In .NET Func<T, TResult> is a method that returns type TResult
-        public static int Increment(int number)
-        {
-            return number + 1;
-        }
-
-        //3. We can pass Func<T> to methods:
+        //1. We can pass Func<T> to methods:
         public static int Operation(int number, Func<int, int> operation)
         {
             return operation(number);
         }
 
-        //4. We can filter collections using Func<T>:
+        //2. We can filter collections using Func<T>:
         public static List<int> Filter(List<int> list, Func<int, bool> filter)
         {
             List<int> result = new List<int>();
@@ -80,6 +75,42 @@
             }
 
             return result;
+        }
+    }
+
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    public static class CollectionExtensions
+    {
+        //3. We can filter collections using extension collection and Func<T>:
+        public static List<int> ExtFilter(this List<int> list, Func<int, bool> filter)
+        {
+            List<int> result = new List<int>();
+
+            foreach (int number in list)
+            {
+                if (filter(number))
+                {
+                    result.Add(number);
+                }
+            }
+
+            return result;
+        }
+
+        //Направа на foreach функция, която работи със ВСИЧКИ колекции, дори и тези, които нямат foreach.
+        public static IEnumerable<T> ForEach<T>(this IEnumerable<T> collection, Action<T> action)
+        {
+            foreach (var item in collection)
+            {
+                action(item);
+            }
+
+            return collection;
         }
     }
 }
