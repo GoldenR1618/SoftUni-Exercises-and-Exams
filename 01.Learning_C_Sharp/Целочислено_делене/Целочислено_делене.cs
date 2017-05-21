@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Целочислено_делене
+﻿namespace Целочислено_делене
 {
-    class Целочислено_делене
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    public class Целочислено_делене
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
             int a = 10;

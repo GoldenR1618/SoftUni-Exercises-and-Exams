@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Numerics;
-using System.Globalization;
-
-namespace Learning_C_Sharp
+﻿namespace Learning_C_Sharp
 {
-    class Learning_C_Sharp
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.Numerics;
+    using System.Globalization;
+
+    public class Learning_C_Sharp
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*

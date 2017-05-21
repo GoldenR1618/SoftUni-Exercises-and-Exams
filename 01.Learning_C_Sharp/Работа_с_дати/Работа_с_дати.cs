@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Globalization;                                                         //За да може да се пoлзва "CultureInfo".
-
-namespace Работа_с_дати
+﻿namespace Работа_с_дати
 {
-    class Работа_с_дати
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.Globalization;                                                         //За да може да се пoлзва "CultureInfo".
+
+    public class Работа_с_дати
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
             DateTime today = DateTime.Now;                                  //Задаване на днешна дата в променлива от тип дата.

@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Листове
+﻿namespace Листове
 {
-    class Листове
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    public class Листове
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             /*
             List<T> holds a list of elements. Holds elements like an array, but can have a variable length.

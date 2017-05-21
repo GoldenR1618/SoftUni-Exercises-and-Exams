@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Речници
+﻿namespace Речници
 {
-    class Речници
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    public class Речници
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {   //.ContainsKey(), .ContainsValue(), .TryGetValue(), .Count, .Key, .Keys, .Value, .Values, Add(), Remove(), Clear()
             Dictionary<string, int> student = new Dictionary<string, int>();    //string са ключовете, int са данните.
 

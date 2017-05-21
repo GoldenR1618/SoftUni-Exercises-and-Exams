@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Test
+﻿namespace Test
 {
-    class Math_Demo
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    public class Math_Demo
     {
-        static void Main()
+        public static void Main()
         {
             Console.WriteLine("---------------------------------------------------------------------------------------------");
             Console.WriteLine(" Math.Round(1.556, 2)     - Закръглява до вторият знак след дес. запетая. = {0}", Math.Round(1.556, 2));

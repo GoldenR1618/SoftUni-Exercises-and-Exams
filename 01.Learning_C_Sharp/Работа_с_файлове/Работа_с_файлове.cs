@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;                //Задължително, когато работим с файлове.
-
-namespace Работа_с_файлове
+﻿namespace Работа_с_файлове
 {
-    class Работа_с_файлове
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.IO;                //Задължително, когато работим с файлове.
+
+    public class Работа_с_файлове
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             //**********************************************************************************************************************
             //Файлове:

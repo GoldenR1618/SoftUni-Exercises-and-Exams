@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Стекове_и_Опашки
+﻿namespace Стекове_и_Опашки
 {
-    class СтековеОпчшки
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    public class СтековеОпчшки
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
 
         }

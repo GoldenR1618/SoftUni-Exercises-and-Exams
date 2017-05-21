@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Форматиране_на_текст
+﻿namespace Форматиране_на_текст
 {
-    class Форматиране_на_текст
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    public class Форматиране_на_текст
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
                     Console.WriteLine("{0:0.00}", 1);                               //Output: 1,00    

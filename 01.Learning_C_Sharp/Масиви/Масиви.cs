@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Масиви
+﻿namespace Масиви
 {
-    class Масиви
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    public class Масиви
     {
-        static void Main(string[] args)                 //string[] args - При стартиране на козолна програма указваме папка в/с която да работи -> myprogram.exe --folder "c:\movies"
+        public static void Main(string[] args)                 //string[] args - При стартиране на козолна програма указваме папка в/с която да работи -> myprogram.exe --folder "c:\movies"
         {
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
             //Дефиниране на масив.
