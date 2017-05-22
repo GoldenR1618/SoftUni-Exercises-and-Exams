@@ -11,55 +11,6 @@
     {
         public static void Main(string[] args)
         {
-            //IEnumerable - всичко от този тип, можем само да foreach-ме и нищо друго. LINQ връща IEnumerable тип данни. За това след употреба завършваме с ToArray, ToList... освен ако не искаме само да го foreach за финал. 
-            //ICollection - позволява освен да foreach-ме и: Add, Clear, Contains, CopyTo, Remove.
-
-            //Min() – Finds the smallest element in a collection
-            //Max() – Finds the largest element in a collection
-            //Sum() – Finds the sum of all elements in a collection
-            //Average() – Finds the average of all elements in a collection
-
-            //ToArray() - to convert in Array
-            //ToList() - to convert in List
-            //ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary
-            //ToCharArray()  - to convert in CharArray
-
-            //OrderBy() - using to sort collections OrderBy(x => x), OrderBy(x => x.Value) - сортирай по стойност.
-            //OrderByDescending - using to sort collections descending
-            //ThenBy() - using to sort collections by more than 1 criteria OrderBy(x => x.Value).ThenBy(x => x.Key) - сортирай първо по стойност, после по ключ.
-            //ThenByDescending() - using to sort collections by more than 1 criteria descending
-
-            //Take() - взима само първите N от колекцията.
-            //Skip() - пропуска първите N от колекцията.
-
-            //Count() - връща броя на тези, които отговарят на условие - Count(num => num % 2 == 0) - връща БРОЯ на четните.
-
-            //Distinct() - дава уникални числа. Ако се повтаря, ги пропуска.
-
-            //First() - връща първото отговарящо на условието в скобите.
-            //Last() - връща последното отговарящо на условието в скобите.
-            //Single() - връща само ако има единствено число отговарящо на условието в скобите.
-            //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
-            //LastOrDefault() - връща последното отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
-            //SingleOrDefault() - връща само ако има единствено число отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
-
-            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. 
-
-            //EndsWith("") - проверява края на стринга дали съвпада с този в скобите и връща булл. Налага се да ползваме ToDictionary() след това за да го конвертираме в речник, защото var-а се пълни с булени.
-
-            //Substring(start index, length) - връща определен брой символи от един стринг.
-            //Replace() - замяна на символи в един стринг - Replace(" ", String.Empty) - истриване на интервалите в един стринг.
-
-            //TryParse() - ако стойноста е от приемлив тип, се записва в out-a.
-            /*  int number = 0;
-                bool parsed = int.TryParse(Console.ReadLine(), out number);     */
-
-
-
-
-
-
-
             /////////////////////////////////////////////
             // int, long, float, double, bool, decimal //
             /////////////////////////////////////////////
@@ -80,13 +31,13 @@
 
             //Properties:
             //Length
-            
+
             //Methods:
             //Clone
             //CompareTo
             //Contains - съобщава дали съдържа подаденото в скобите.
             //CopyTo
-            //EndsWith
+            //EndsWith - проверява края на стринга дали съвпада с този в скобите и връща булл. Налага се да ползваме ToDictionary() след това за да го конвертираме в речник, защото var-а се пълни с булени.
             //Equals
             //GetEnumerator
             //GetHashCode
@@ -102,11 +53,11 @@
             //PadLeft
             //PadRight
             //Remove
-            //Replace
+            //Replace - замяна на символи в един стринг - Replace(" ", String.Empty) - истриване на интервалите в един стринг.
             //Split
             //StartsWith - съобщава дали стринга започва със зададения низ.
-            //Substring
-            //ToCharArray
+            //Substring - Substring(start index, length) - връща определен брой символи от един стринг.
+            //ToCharArray  - to convert in CharArray.
             //ToLower
             //ToLowerInvariant
             //ToString
@@ -118,55 +69,57 @@
 
             //Extension Methods:
             //Aggregate()
-            //All()
-            //Any()
+            //All() - проверява дали всички елементи отговарят на условието в скобите.
+            //Any() - проверява дали има някой елемент отговарящ на условието в скобите.
             //AsEnumerable()
             //AsParallel
             //AsParallel()
             //AsQueryable
             //AsQueryable()
-            //Average()
+            //Average() – Finds the average of all elements in a collection.
             //Cast()
             //Concat() - съединява елементите на две колекции.
             //Contains() - съобщава дали съдържа подаденото в скобите.
-            //Count()
+            //Count() - връща броя на тези, които отговарят на условие - Count(num => num % 2 == 0) - връща БРОЯ на четните.
             //DefaultIfEmpty()
-            //Distinct()
+            //Distinct() - дава уникални елементи. Ако се повтарят, ги пропуска.
             //ElementAt()
             //ElementAtOrDefault()
             //Except()
-            //First()
-            //FirstOrDefault()
-            //GroupBy()
+            //First() - връща първото отговарящо на условието в скобите.
+            //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ.
             //GroupJoin()
             //Intersect()
             //Join()
-            //Last()
-            //LastOrDefault()
+            //Last() - връща последното отговарящо на условието в скобите.
+            //LastOrDefault() - връща последното отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
             //LongCount()
-            //Max()
-            //Min()
+            //Max() – Finds the largest element in a collection.
+            //Min() – Finds the smallest element in a collection.
             //OfType()
-            //OrderBy()
-            //OrderByDescending()
+            //OrderBy() - using to sort collections OrderBy(x => x), OrderBy(x => x.Value) - сортирай по стойност.
+            //OrderByDescending() - using to sort collections descending.
+            //ThenBy() - using to sort collections by more than 1 criteria OrderBy(x => x.Value).ThenBy(x => x.Key) - сортирай първо по стойност, после по ключ.
+            //ThenByDescending() - using to sort collections by more than 1 criteria descending.
             //Reverse() - Обръща реда на елементите в една колекция.
             //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря.
-            //SelectMany()
+            //SelectMany() - обединява множество колекции в една колекция.
             //SequenceEqual()
-            //Single()
-            //SingleOrDefault()
-            //Skip()
+            //Single() - връща само ако има единствено число отговарящо на условието в скобите.
+            //SingleOrDefault() - връща само ако има единствено число отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
+            //Skip() - пропуска първите N елементи от колекцията.
             //SkipWhile()
-            //Sum()
-            //Take()
+            //Sum() – Finds the sum of all elements in a collection.
+            //Take() - взима само първите N елемента от колекцията.
             //TakeWhile()
-            //ToArray()
-            //ToDictionary()
-            //ToList()
+            //ToArray() - to convert in Array.
+            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary.
+            //ToList() - to convert in List.
             //ToLookup()
             //Union()
             //Where() - търси в колекция по зададено условие - Where(num => num % 2 == 0) - връща САМО четните.
-            //Zip()
+            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. 
 
 
 
@@ -201,59 +154,61 @@
 
             //Extension Methods:
             //Aggregate()
-            //All()
-            //Any()
+            //All() - проверява дали всички елементи отговарят на условието в скобите.
+            //Any() - проверява дали има някой елемент отговарящ на условието в скобите.
             //AsEnumerable()
             //AsParallel
             //AsParallel()
             //AsQueryable
             //AsQueryable()
             //Average
-            //Average()
+            //Average() – Finds the average of all elements in a collection.
             //Cast()
             //Concat() - съединява елементите на две колекции.
             //Contains() - съобщава дали съдържа подаденото в скобите.
-            //Count()
+            //Count() - връща броя на тези, които отговарят на условие - Count(num => num % 2 == 0) - връща БРОЯ на четните.
             //DefaultIfEmpty()
-            //Distinct()
+            //Distinct() - дава уникални елементи. Ако се повтарят, ги пропуска.
             //ElementAt()
             //ElementAtOrDefault()
             //Except()
-            //First()
-            //FirstOrDefault()
-            //GroupBy()
+            //First() - връща първото отговарящо на условието в скобите.
+            //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ.
             //GroupJoin()
             //Intersect()
             //Join()
-            //Last()
-            //LastOrDefault()
+            //Last() - връща последното отговарящо на условието в скобите.
+            //LastOrDefault() - връща последното отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
             //LongCount()
             //Max
-            //Max()
+            //Max() – Finds the largest element in a collection.
             //Min
-            //Min()
+            //Min() – Finds the smallest element in a collection.
             //OfType()
-            //OrderBy()
-            //OrderByDescending()
+            //OrderBy() - using to sort collections OrderBy(x => x), OrderBy(x => x.Value) - сортирай по стойност.
+            //OrderByDescending() - using to sort collections descending.
+            //ThenBy() - using to sort collections by more than 1 criteria OrderBy(x => x.Value).ThenBy(x => x.Key) - сортирай първо по стойност, после по ключ.
+            //ThenByDescending() - using to sort collections by more than 1 criteria descending.
             //Reverse() - Обръща реда на елементите в една колекция.
             //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря.
-            //SelectMany()
+            //SelectMany() - обединява множество колекции в една колекция.
             //SequenceEqual()
-            //Single()
-            //SingleOrDefault()
-            //Skip()
+            //Single() - връща само ако има единствено число отговарящо на условието в скобите.
+            //SingleOrDefault() - връща само ако има единствено число отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
+            //Skip() - пропуска първите N елементи от колекцията.
             //SkipWhile()
             //Sum
-            //Sum()
-            //Take()
+            //Sum() – Finds the sum of all elements in a collection.
+            //Take() - взима само първите N елемента от колекцията.
             //TakeWhile()
-            //ToArray()
-            //ToDictionary()
-            //ToList()
+            //ToArray() - to convert in Array.
+            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary.
+            //ToList() - to convert in List.
             //ToLookup()
             //Union()
             //Where() - търси в колекция по зададено условие - Where(num => num % 2 == 0) - връща САМО четните.
-            //Zip()
+            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. 
 
 
 
@@ -303,59 +258,61 @@
 
             //Extension Methods:
             //Aggregate()
-            //All()
-            //Any()
+            //All() - проверява дали всички елементи отговарят на условието в скобите.
+            //Any() - проверява дали има някой елемент отговарящ на условието в скобите.
             //AsEnumerable()
             //AsParallel
             //AsParallel()
             //AsQueryable
             //AsQueryable()
             //Average
-            //Average()
+            //Average() – Finds the average of all elements in a collection.
             //Cast()
             //Concat() - съединява елементите на две колекции.
             //Contains() - съобщава дали съдържа подаденото в скобите.
-            //Count()
+            //Count() - връща броя на тези, които отговарят на условие - Count(num => num % 2 == 0) - връща БРОЯ на четните.
             //DefaultIfEmpty()
-            //Distinct()
+            //Distinct() - дава уникални елементи. Ако се повтарят, ги пропуска.
             //ElementAt()
             //ElementAtOrDefault()
             //Except()
-            //First()
-            //FirstOrDefault()
-            //GroupBy()
+            //First() - връща първото отговарящо на условието в скобите.
+            //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ.
             //GroupJoin()
             //Intersect()
             //Join()
-            //Last()
-            //LastOrDefault()
+            //Last() - връща последното отговарящо на условието в скобите.
+            //LastOrDefault() - връща последното отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
             //LongCount()
             //Max
-            //Max()
+            //Max() – Finds the largest element in a collection.
             //Min
-            //Min()
+            //Min() – Finds the smallest element in a collection.
             //OfType()
-            //OrderBy()
-            //OrderByDescending()
+            //OrderBy() - using to sort collections OrderBy(x => x), OrderBy(x => x.Value) - сортирай по стойност.
+            //OrderByDescending() - using to sort collections descending.
+            //ThenBy() - using to sort collections by more than 1 criteria OrderBy(x => x.Value).ThenBy(x => x.Key) - сортирай първо по стойност, после по ключ.
+            //ThenByDescending() - using to sort collections by more than 1 criteria descending.
             //Reverse() - Обръща реда на елементите в една колекция.
             //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря.
-            //SelectMany()
+            //SelectMany() - обединява множество колекции в една колекция.
             //SequenceEqual()
-            //Single()
-            //SingleOrDefault()
-            //Skip()
+            //Single() - връща само ако има единствено число отговарящо на условието в скобите.
+            //SingleOrDefault() - връща само ако има единствено число отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
+            //Skip() - пропуска първите N елементи от колекцията.
             //SkipWhile()
             //Sum
-            //Sum()
-            //Take()
+            //Sum() – Finds the sum of all elements in a collection.
+            //Take() - взима само първите N елемента от колекцията.
             //TakeWhile()
-            //ToArray()
-            //ToDictionary()
-            //ToList()
+            //ToArray() - to convert in Array.
+            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary.
+            //ToList() - to convert in List.
             //ToLookup()
             //Union()
             //Where() - търси в колекция по зададено условие - Where(num => num % 2 == 0) - връща САМО четните.
-            //Zip()   
+            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. 
 
 
 
@@ -387,55 +344,57 @@
 
             //Extension Methods:
             //Aggregate()
-            //All()
-            //Any()
+            //All() - проверява дали всички елементи отговарят на условието в скобите.
+            //Any() - проверява дали има някой елемент отговарящ на условието в скобите.
             //AsEnumerable()
             //AsParallel
             //AsParallel()
             //AsQueryable
             //AsQueryable()
-            //Average()
+            //Average() – Finds the average of all elements in a collection.
             //Cast()
             //Concat() - съединява елементите на две колекции.
             //Contains() - съобщава дали съдържа подаденото в скобите.
-            //Count()
+            //Count() - връща броя на тези, които отговарят на условие - Count(num => num % 2 == 0) - връща БРОЯ на четните.
             //DefaultIfEmpty()
-            //Distinct()
+            //Distinct() - дава уникални елементи. Ако се повтарят, ги пропуска.
             //ElementAt()
             //ElementAtOrDefault()
             //Except()
-            //First()
-            //FirstOrDefault()
-            //GroupBy()
+            //First() - връща първото отговарящо на условието в скобите.
+            //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ.
             //GroupJoin()
             //Intersect()
             //Join()
-            //Last()
-            //LastOrDefault()
+            //Last() - връща последното отговарящо на условието в скобите.
+            //LastOrDefault() - връща последното отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
             //LongCount()
-            //Max()
-            //Min()
+            //Max() – Finds the largest element in a collection.
+            //Min() – Finds the smallest element in a collection.
             //OfType()
-            //OrderBy()
-            //OrderByDescending()
+            //OrderBy() - using to sort collections OrderBy(x => x), OrderBy(x => x.Value) - сортирай по стойност.
+            //OrderByDescending() - using to sort collections descending.
+            //ThenBy() - using to sort collections by more than 1 criteria OrderBy(x => x.Value).ThenBy(x => x.Key) - сортирай първо по стойност, после по ключ.
+            //ThenByDescending() - using to sort collections by more than 1 criteria descending.
             //Reverse() - Обръща реда на елементите в една колекция.
             //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря.
-            //SelectMany()
+            //SelectMany() - обединява множество колекции в една колекция.
             //SequenceEqual()
-            //Single()
-            //SingleOrDefault()
-            //Skip()
+            //Single() - връща само ако има единствено число отговарящо на условието в скобите.
+            //SingleOrDefault() - връща само ако има единствено число отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
+            //Skip() - пропуска първите N елементи от колекцията.
             //SkipWhile()
-            //Sum()
-            //Take()
+            //Sum() – Finds the sum of all elements in a collection.
+            //Take() - взима само първите N елемента от колекцията.
             //TakeWhile()
-            //ToArray()
-            //ToDictionary()
-            //ToList()
+            //ToArray() - to convert in Array.
+            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary.
+            //ToList() - to convert in List.
             //ToLookup()
             //Union()
             //Where() - търси в колекция по зададено условие - Where(num => num % 2 == 0) - връща САМО четните.
-            //Zip()
+            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. 
 
 
 
@@ -475,59 +434,61 @@
 
             //Extension Methods:
             //Aggregate()
-            //All()
-            //Any()
+            //All() - проверява дали всички елементи отговарят на условието в скобите.
+            //Any() - проверява дали има някой елемент отговарящ на условието в скобите.
             //AsEnumerable()
             //AsParallel
             //AsParallel()
             //AsQueryable
             //AsQueryable()
             //Average
-            //Average()
+            //Average() – Finds the average of all elements in a collection.
             //Cast()
             //Concat() - съединява елементите на две колекции.
             //Contains() - съобщава дали съдържа подаденото в скобите.
-            //Count()
+            //Count() - връща броя на тези, които отговарят на условие - Count(num => num % 2 == 0) - връща БРОЯ на четните.
             //DefaultIfEmpty()
-            //Distinct()
+            //Distinct() - дава уникални елементи. Ако се повтарят, ги пропуска.
             //ElementAt()
             //ElementAtOrDefault()
             //Except()
-            //First()
-            //FirstOrDefault()
-            //GroupBy()
+            //First() - връща първото отговарящо на условието в скобите.
+            //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ.
             //GroupJoin()
             //Intersect()
             //Join()
-            //Last()
-            //LastOrDefault()
+            //Last() - връща последното отговарящо на условието в скобите.
+            //LastOrDefault() - връща последното отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
             //LongCount()
             //Max
-            //Max()
+            //Max() – Finds the largest element in a collection.
             //Min
-            //Min()
+            //Min() – Finds the smallest element in a collection.
             //OfType()
-            //OrderBy()
-            //OrderByDescending()
+            //OrderBy() - using to sort collections OrderBy(x => x), OrderBy(x => x.Value) - сортирай по стойност.
+            //OrderByDescending() - using to sort collections descending.
+            //ThenBy() - using to sort collections by more than 1 criteria OrderBy(x => x.Value).ThenBy(x => x.Key) - сортирай първо по стойност, после по ключ.
+            //ThenByDescending() - using to sort collections by more than 1 criteria descending.
             //Reverse() - Обръща реда на елементите в една колекция.
             //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря.
-            //SelectMany()
+            //SelectMany() - обединява множество колекции в една колекция.
             //SequenceEqual()
-            //Single()
-            //SingleOrDefault()
-            //Skip()
+            //Single() - връща само ако има единствено число отговарящо на условието в скобите.
+            //SingleOrDefault() - връща само ако има единствено число отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
+            //Skip() - пропуска първите N елементи от колекцията.
             //SkipWhile()
             //Sum
-            //Sum()
-            //Take()
+            //Sum() – Finds the sum of all elements in a collection.
+            //Take() - взима само първите N елемента от колекцията.
             //TakeWhile()
-            //ToArray()
-            //ToDictionary()
-            //ToList()
+            //ToArray() - to convert in Array.
+            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary.
+            //ToList() - to convert in List.
             //ToLookup()
             //Union()
             //Where() - търси в колекция по зададено условие - Where(num => num % 2 == 0) - връща САМО четните.
-            //Zip() 
+            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. 
 
 
 
@@ -568,57 +529,59 @@
 
             //Extension Methods:
             //Aggregate()
-            //All()
-            //Any()
+            //All() - проверява дали всички елементи отговарят на условието в скобите.
+            //Any() - проверява дали има някой елемент отговарящ на условието в скобите.
             //AsEnumerable()
             //AsParallel
             //AsParallel()
             //AsQueryable
             //AsQueryable()
             //Average
-            //Average()
+            //Average() – Finds the average of all elements in a collection.
             //Cast()
             //Concat() - съединява елементите на две колекции.
             //Contains() - съобщава дали съдържа подаденото в скобите.
-            //Count()
+            //Count() - връща броя на тези, които отговарят на условие - Count(num => num % 2 == 0) - връща БРОЯ на четните.
             //DefaultIfEmpty()
-            //Distinct()
+            //Distinct() - дава уникални елементи. Ако се повтарят, ги пропуска.
             //ElementAt()
             //ElementAtOrDefault()
             //Except()
-            //First()
-            //FirstOrDefault()
-            //GroupBy()
+            //First() - връща първото отговарящо на условието в скобите.
+            //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ.
             //GroupJoin()
             //Intersect()
             //Join()
-            //Last()
-            //LastOrDefault()
+            //Last() - връща последното отговарящо на условието в скобите.
+            //LastOrDefault() - връща последното отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
             //LongCount()
-            //Max()
-            //Min()
+            //Max() – Finds the largest element in a collection.
+            //Min() – Finds the smallest element in a collection.
             //OfType()
-            //OrderBy()
-            //OrderByDescending()
+            //OrderBy() - using to sort collections OrderBy(x => x), OrderBy(x => x.Value) - сортирай по стойност.
+            //OrderByDescending() - using to sort collections descending.
+            //ThenBy() - using to sort collections by more than 1 criteria OrderBy(x => x.Value).ThenBy(x => x.Key) - сортирай първо по стойност, после по ключ.
+            //ThenByDescending() - using to sort collections by more than 1 criteria descending.
             //Reverse() - Обръща реда на елементите в една колекция.
             //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря.
-            //SelectMany()
+            //SelectMany() - обединява множество колекции в една колекция.
             //SequenceEqual()
-            //Single()
-            //SingleOrDefault()
-            //Skip()
+            //Single() - връща само ако има единствено число отговарящо на условието в скобите.
+            //SingleOrDefault() - връща само ако има единствено число отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
+            //Skip() - пропуска първите N елементи от колекцията.
             //SkipWhile()
             //Sum
-            //Sum()
-            //Take()
+            //Sum() – Finds the sum of all elements in a collection.
+            //Take() - взима само първите N елемента от колекцията.
             //TakeWhile()
-            //ToArray()
-            //ToDictionary()
-            //ToList()
+            //ToArray() - to convert in Array.
+            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary.
+            //ToList() - to convert in List.
             //ToLookup()
             //Union()
             //Where() - търси в колекция по зададено условие - Where(num => num % 2 == 0) - връща САМО четните.
-            //Zip() 
+            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. 
 
 
 

@@ -56,7 +56,15 @@
             Conditional breakpoints
             Enter debug mode after exception
             
-            /// - именуване на class.           
+            /// - именуване на class.
+            
+            //IEnumerable - всичко от този тип, можем само да foreach-ме и нищо друго. LINQ връща IEnumerable тип данни. За това след употреба завършваме с ToArray, ToList... освен ако не искаме само да го foreach за финал. 
+            //ICollection - позволява освен да foreach-ме и: Add, Clear, Contains, CopyTo, Remove.
+
+            //TryParse() - ако стойноста е от приемлив тип, се записва в out-a.
+            //int number = 0;
+            //bool parsed = int.TryParse(Console.ReadLine(), out number);
+
 */
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*                  Value Types: 
