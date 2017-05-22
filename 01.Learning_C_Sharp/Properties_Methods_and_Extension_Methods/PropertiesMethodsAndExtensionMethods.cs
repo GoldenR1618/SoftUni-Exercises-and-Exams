@@ -88,10 +88,10 @@
             //Except()
             //First() - връща първото отговарящо на условието в скобите.
             //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
-            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var grouppedElements = listOfStudents.GroupBy(st => st.FirstName0.ToList(); foreach (var group in grouppedElements) { Console.WriteLine(group.Key) foreach (var item in group) { Console.WriteLine("-- " + item.FirstName + " " + item.LastName) }}.
             //GroupJoin()
             //Intersect()
-            //Join()
+            //Join() - Съединяване на две колекции по някакви критерии. var 
             //Last() - връща последното отговарящо на условието в скобите.
             //LastOrDefault() - връща последното отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
             //LongCount()
@@ -103,10 +103,10 @@
             //ThenBy() - using to sort collections by more than 1 criteria OrderBy(x => x.Value).ThenBy(x => x.Key) - сортирай първо по стойност, после по ключ.
             //ThenByDescending() - using to sort collections by more than 1 criteria descending.
             //Reverse() - Обръща реда на елементите в една колекция.
-            //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря.
-            //SelectMany() - обединява множество колекции в една колекция.
+            //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря. Select(student => new { FullName = student.FirstName + " " + student.LastName}) - правене на нов обект.
+            //SelectMany() - обединява множество колекции в една колекция. List<int[]> list = new List<int[]> { new int[] { 1, 2 }, new int[] { 3, 4 } }; int[] result = list.SelectMany(n => n).ToArray(); Console.WriteLine(string.Join(" ", result));
             //SequenceEqual()
-            //Single() - връща само ако има единствено число отговарящо на условието в скобите.
+            //Single() - връща само ако има единствено число отговарящо на условието в скобите. Ако има повече от едно - гърми!!!
             //SingleOrDefault() - връща само ако има единствено число отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
             //Skip() - пропуска първите N елементи от колекцията.
             //SkipWhile()
@@ -114,12 +114,12 @@
             //Take() - взима само първите N елемента от колекцията.
             //TakeWhile()
             //ToArray() - to convert in Array.
-            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary.
+            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary. Ако не посочим Value-то, ще използва за Value целият обект. Пример: Dictionary<bool, List<int>> dict = arr.GroupBy(num => num % 2 ==  0).ToDictionary(g => g.Key, g => g.ToList()); - Ако не ToList-ем Value-то, няма да можем да го достъпваме директно елемент по елемент.
             //ToList() - to convert in List.
             //ToLookup()
             //Union()
             //Where() - търси в колекция по зададено условие - Where(num => num % 2 == 0) - връща САМО четните.
-            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. 
+            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. int[] arr = new int[] { 1, 2, 3 }; int[] arr2 = new int[] { 5, 4, 3 }; int[] result = arr.Zip(arr2, (a, b) => (a + b)).ToArray(); Console.WriteLine(string.Join(" ", result));
 
 
 
@@ -174,7 +174,7 @@
             //Except()
             //First() - връща първото отговарящо на условието в скобите.
             //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
-            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var grouppedElements = listOfStudents.GroupBy(st => st.FirstName0.ToList(); foreach (var group in grouppedElements) { Console.WriteLine(group.Key) foreach (var item in group) { Console.WriteLine("-- " + item.FirstName + " " + item.LastName) }}.
             //GroupJoin()
             //Intersect()
             //Join()
@@ -191,10 +191,10 @@
             //ThenBy() - using to sort collections by more than 1 criteria OrderBy(x => x.Value).ThenBy(x => x.Key) - сортирай първо по стойност, после по ключ.
             //ThenByDescending() - using to sort collections by more than 1 criteria descending.
             //Reverse() - Обръща реда на елементите в една колекция.
-            //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря.
-            //SelectMany() - обединява множество колекции в една колекция.
+            //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря. Select(student => new { FullName = student.FirstName + " " + student.LastName}) - правене на нов обект.
+            //SelectMany() - обединява множество колекции в една колекция. List<int[]> list = new List<int[]> { new int[] { 1, 2 }, new int[] { 3, 4 } }; int[] result = list.SelectMany(n => n).ToArray(); Console.WriteLine(string.Join(" ", result));
             //SequenceEqual()
-            //Single() - връща само ако има единствено число отговарящо на условието в скобите.
+            //Single() - връща само ако има единствено число отговарящо на условието в скобите. Ако има повече от едно - гърми!!!
             //SingleOrDefault() - връща само ако има единствено число отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
             //Skip() - пропуска първите N елементи от колекцията.
             //SkipWhile()
@@ -203,12 +203,12 @@
             //Take() - взима само първите N елемента от колекцията.
             //TakeWhile()
             //ToArray() - to convert in Array.
-            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary.
+            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary. Ако не посочим Value-то, ще използва за Value целият обект. Пример: Dictionary<bool, List<int>> dict = arr.GroupBy(num => num % 2 ==  0).ToDictionary(g => g.Key, g => g.ToList()); - Ако не ToList-ем Value-то, няма да можем да го достъпваме директно елемент по елемент.
             //ToList() - to convert in List.
             //ToLookup()
             //Union()
             //Where() - търси в колекция по зададено условие - Where(num => num % 2 == 0) - връща САМО четните.
-            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. 
+            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. int[] arr = new int[] { 1, 2, 3 }; int[] arr2 = new int[] { 5, 4, 3 }; int[] result = arr.Zip(arr2, (a, b) => (a + b)).ToArray(); Console.WriteLine(string.Join(" ", result));
 
 
 
@@ -236,7 +236,7 @@
             //FindIndex
             //FindLast
             //FindLastIndex
-            //ForEach
+            //ForEach - void функция аналогична на нормалния foreach. list.Where(x => x > 2).ToList().ForEach(x => Console.WriteLine(x));
             //GetEnumerator
             //GetHashCode
             //GetRange
@@ -278,7 +278,7 @@
             //Except()
             //First() - връща първото отговарящо на условието в скобите.
             //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
-            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var grouppedElements = listOfStudents.GroupBy(st => st.FirstName0.ToList(); foreach (var group in grouppedElements) { Console.WriteLine(group.Key) foreach (var item in group) { Console.WriteLine("-- " + item.FirstName + " " + item.LastName) }}.
             //GroupJoin()
             //Intersect()
             //Join()
@@ -295,10 +295,10 @@
             //ThenBy() - using to sort collections by more than 1 criteria OrderBy(x => x.Value).ThenBy(x => x.Key) - сортирай първо по стойност, после по ключ.
             //ThenByDescending() - using to sort collections by more than 1 criteria descending.
             //Reverse() - Обръща реда на елементите в една колекция.
-            //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря.
-            //SelectMany() - обединява множество колекции в една колекция.
+            //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря. Select(student => new { FullName = student.FirstName + " " + student.LastName}) - правене на нов обект.
+            //SelectMany() - обединява множество колекции в една колекция. List<int[]> list = new List<int[]> { new int[] { 1, 2 }, new int[] { 3, 4 } }; int[] result = list.SelectMany(n => n).ToArray(); Console.WriteLine(string.Join(" ", result));
             //SequenceEqual()
-            //Single() - връща само ако има единствено число отговарящо на условието в скобите.
+            //Single() - връща само ако има единствено число отговарящо на условието в скобите. Ако има повече от едно - гърми!!!
             //SingleOrDefault() - връща само ако има единствено число отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
             //Skip() - пропуска първите N елементи от колекцията.
             //SkipWhile()
@@ -307,12 +307,12 @@
             //Take() - взима само първите N елемента от колекцията.
             //TakeWhile()
             //ToArray() - to convert in Array.
-            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary.
+            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary. Ако не посочим Value-то, ще използва за Value целият обект. Пример: Dictionary<bool, List<int>> dict = arr.GroupBy(num => num % 2 ==  0).ToDictionary(g => g.Key, g => g.ToList()); - Ако не ToList-ем Value-то, няма да можем да го достъпваме директно елемент по елемент.
             //ToList() - to convert in List.
             //ToLookup()
             //Union()
             //Where() - търси в колекция по зададено условие - Where(num => num % 2 == 0) - връща САМО четните.
-            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. 
+            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. int[] arr = new int[] { 1, 2, 3 }; int[] arr2 = new int[] { 5, 4, 3 }; int[] result = arr.Zip(arr2, (a, b) => (a + b)).ToArray(); Console.WriteLine(string.Join(" ", result));
 
 
 
@@ -363,7 +363,7 @@
             //Except()
             //First() - връща първото отговарящо на условието в скобите.
             //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
-            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var grouppedElements = listOfStudents.GroupBy(st => st.FirstName0.ToList(); foreach (var group in grouppedElements) { Console.WriteLine(group.Key) foreach (var item in group) { Console.WriteLine("-- " + item.FirstName + " " + item.LastName) }}.
             //GroupJoin()
             //Intersect()
             //Join()
@@ -378,10 +378,10 @@
             //ThenBy() - using to sort collections by more than 1 criteria OrderBy(x => x.Value).ThenBy(x => x.Key) - сортирай първо по стойност, после по ключ.
             //ThenByDescending() - using to sort collections by more than 1 criteria descending.
             //Reverse() - Обръща реда на елементите в една колекция.
-            //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря.
-            //SelectMany() - обединява множество колекции в една колекция.
+            //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря. Select(student => new { FullName = student.FirstName + " " + student.LastName}) - правене на нов обект.
+            //SelectMany() - обединява множество колекции в една колекция. List<int[]> list = new List<int[]> { new int[] { 1, 2 }, new int[] { 3, 4 } }; int[] result = list.SelectMany(n => n).ToArray(); Console.WriteLine(string.Join(" ", result));
             //SequenceEqual()
-            //Single() - връща само ако има единствено число отговарящо на условието в скобите.
+            //Single() - връща само ако има единствено число отговарящо на условието в скобите. Ако има повече от едно - гърми!!!
             //SingleOrDefault() - връща само ако има единствено число отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
             //Skip() - пропуска първите N елементи от колекцията.
             //SkipWhile()
@@ -389,12 +389,12 @@
             //Take() - взима само първите N елемента от колекцията.
             //TakeWhile()
             //ToArray() - to convert in Array.
-            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary.
+            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary. Ако не посочим Value-то, ще използва за Value целият обект. Пример: Dictionary<bool, List<int>> dict = arr.GroupBy(num => num % 2 ==  0).ToDictionary(g => g.Key, g => g.ToList()); - Ако не ToList-ем Value-то, няма да можем да го достъпваме директно елемент по елемент.
             //ToList() - to convert in List.
             //ToLookup()
             //Union()
             //Where() - търси в колекция по зададено условие - Where(num => num % 2 == 0) - връща САМО четните.
-            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. 
+            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. int[] arr = new int[] { 1, 2, 3 }; int[] arr2 = new int[] { 5, 4, 3 }; int[] result = arr.Zip(arr2, (a, b) => (a + b)).ToArray(); Console.WriteLine(string.Join(" ", result));
 
 
 
@@ -454,7 +454,7 @@
             //Except()
             //First() - връща първото отговарящо на условието в скобите.
             //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
-            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var grouppedElements = listOfStudents.GroupBy(st => st.FirstName0.ToList(); foreach (var group in grouppedElements) { Console.WriteLine(group.Key) foreach (var item in group) { Console.WriteLine("-- " + item.FirstName + " " + item.LastName) }}.
             //GroupJoin()
             //Intersect()
             //Join()
@@ -471,10 +471,10 @@
             //ThenBy() - using to sort collections by more than 1 criteria OrderBy(x => x.Value).ThenBy(x => x.Key) - сортирай първо по стойност, после по ключ.
             //ThenByDescending() - using to sort collections by more than 1 criteria descending.
             //Reverse() - Обръща реда на елементите в една колекция.
-            //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря.
-            //SelectMany() - обединява множество колекции в една колекция.
+            //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря. Select(student => new { FullName = student.FirstName + " " + student.LastName}) - правене на нов обект.
+            //SelectMany() - обединява множество колекции в една колекция. List<int[]> list = new List<int[]> { new int[] { 1, 2 }, new int[] { 3, 4 } }; int[] result = list.SelectMany(n => n).ToArray(); Console.WriteLine(string.Join(" ", result));
             //SequenceEqual()
-            //Single() - връща само ако има единствено число отговарящо на условието в скобите.
+            //Single() - връща само ако има единствено число отговарящо на условието в скобите. Ако има повече от едно - гърми!!!
             //SingleOrDefault() - връща само ако има единствено число отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
             //Skip() - пропуска първите N елементи от колекцията.
             //SkipWhile()
@@ -483,12 +483,12 @@
             //Take() - взима само първите N елемента от колекцията.
             //TakeWhile()
             //ToArray() - to convert in Array.
-            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary.
+            //ToDictionary( - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary. Ако не посочим Value-то, ще използва за Value целият обект. Пример: Dictionary<bool, List<int>> dict = arr.GroupBy(num => num % 2 ==  0).ToDictionary(g => g.Key, g => g.ToList()); - Ако не ToList-ем Value-то, няма да можем да го достъпваме директно елемент по елемент.
             //ToList() - to convert in List.
             //ToLookup()
             //Union()
             //Where() - търси в колекция по зададено условие - Where(num => num % 2 == 0) - връща САМО четните.
-            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. 
+            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. int[] arr = new int[] { 1, 2, 3 }; int[] arr2 = new int[] { 5, 4, 3 }; int[] result = arr.Zip(arr2, (a, b) => (a + b)).ToArray(); Console.WriteLine(string.Join(" ", result));
 
 
 
@@ -549,7 +549,7 @@
             //Except()
             //First() - връща първото отговарящо на условието в скобите.
             //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
-            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var grouppedElements = listOfStudents.GroupBy(st => st.FirstName0.ToList(); foreach (var group in grouppedElements) { Console.WriteLine(group.Key) foreach (var item in group) { Console.WriteLine("-- " + item.FirstName + " " + item.LastName) }}.
             //GroupJoin()
             //Intersect()
             //Join()
@@ -564,10 +564,10 @@
             //ThenBy() - using to sort collections by more than 1 criteria OrderBy(x => x.Value).ThenBy(x => x.Key) - сортирай първо по стойност, после по ключ.
             //ThenByDescending() - using to sort collections by more than 1 criteria descending.
             //Reverse() - Обръща реда на елементите в една колекция.
-            //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря.
-            //SelectMany() - обединява множество колекции в една колекция.
+            //Select() - Конвертира данните в друг тип - Select(x => x *2) - връща всички цифри от списъка в нов списък умножени по 2. Select(x => (char)(x + 'a' - 1)) - на всички цифри, коя буква отговаря. Select(student => new { FullName = student.FirstName + " " + student.LastName}) - правене на нов обект.
+            //SelectMany() - обединява множество колекции в една колекция. List<int[]> list = new List<int[]> { new int[] { 1, 2 }, new int[] { 3, 4 } }; int[] result = list.SelectMany(n => n).ToArray(); Console.WriteLine(string.Join(" ", result));
             //SequenceEqual()
-            //Single() - връща само ако има единствено число отговарящо на условието в скобите.
+            //Single() - връща само ако има единствено число отговарящо на условието в скобите. Ако има повече от едно - гърми!!!
             //SingleOrDefault() - връща само ако има единствено число отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
             //Skip() - пропуска първите N елементи от колекцията.
             //SkipWhile()
@@ -576,12 +576,12 @@
             //Take() - взима само първите N елемента от колекцията.
             //TakeWhile()
             //ToArray() - to convert in Array.
-            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary.
+            //ToDictionary() - ToDictionary(x => x.Key, x => x.Value) - to convert in Dictionary. Ако не посочим Value-то, ще използва за Value целият обект. Пример: Dictionary<bool, List<int>> dict = arr.GroupBy(num => num % 2 ==  0).ToDictionary(g => g.Key, g => g.ToList()); - Ако не ToList-ем Value-то, няма да можем да го достъпваме директно елемент по елемент.
             //ToList() - to convert in List.
             //ToLookup()
             //Union()
             //Where() - търси в колекция по зададено условие - Where(num => num % 2 == 0) - връща САМО четните.
-            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. 
+            //Zip() - взима две колекции и изпълнява с тях условието в скобите - var result = first.Zip(second, (x, y) => (x + y)) - сумира елемент на първата със съответният елемент на втората. int[] arr = new int[] { 1, 2, 3 }; int[] arr2 = new int[] { 5, 4, 3 }; int[] result = arr.Zip(arr2, (a, b) => (a + b)).ToArray(); Console.WriteLine(string.Join(" ", result));
 
 
 
