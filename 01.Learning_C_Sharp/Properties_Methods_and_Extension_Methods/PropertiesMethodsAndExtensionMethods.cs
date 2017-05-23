@@ -16,7 +16,7 @@
             /////////////////////////////////////////////
 
             //Methods:
-            //CompareTo
+            //CompareTo - Сравняване на два стринга. int result = str1.CompareTo(str2). result == 0 if str1 equals str2, result < 0 if str1 is before str2, result > 0 if str1 is after str2.
             //Equals
             //GetHashCode
             //GetType
@@ -34,7 +34,7 @@
 
             //Methods:
             //Clone
-            //CompareTo
+            //CompareTo - Сравняване на два стринга. int result = str1.CompareTo(str2). result == 0 if str1 equals str2, result < 0 if str1 is before str2, result > 0 if str1 is after str2.
             //Contains - съобщава дали съдържа подаденото в скобите.
             //CopyTo
             //EndsWith - проверява края на стринга дали съвпада с този в скобите и връща булл. Налага се да ползваме ToDictionary() след това за да го конвертираме в речник, защото var-а се пълни с булени.
