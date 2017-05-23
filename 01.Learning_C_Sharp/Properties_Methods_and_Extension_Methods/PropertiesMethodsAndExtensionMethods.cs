@@ -88,7 +88,7 @@
             //Except()
             //First() - връща първото отговарящо на условието в скобите.
             //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
-            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var grouppedElements = listOfStudents.GroupBy(st => st.FirstName0.ToList(); foreach (var group in grouppedElements) { Console.WriteLine(group.Key) foreach (var item in group) { Console.WriteLine("-- " + item.FirstName + " " + item.LastName) }}.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var groups = students.GroupBy(s => s.Group, s => s.Name).OrderBy(x => x.Key); foreach (var group in groups) { Console.WriteLine(group.Key + " - " + string.Join(", ", group)); }. Ако в скобите липсва втори аргумент, добавя целият обект, иначе добавя към групата само посоченият елемент.
             //GroupJoin() - It groups one collection of objects by a key and joins those groups with another collection of keyed objects. With this method, we create a collection where, at each key, a group of results is placed.
             //Intersect()
             //Join() - Съединяване на две колекции по някакви критерии. var arr1 = new int[3] { 1, 25, 300 }; var arr2 = new int[3] { 2, 26, 301 }; var result = arr1.Join(arr2, x => x + 1, y => y, (x, y) => x); /*Избери елемент X от arr1 ако в arr2 има X+1.*/ Console.WriteLine(string.Join(" ", result)); 
@@ -174,7 +174,7 @@
             //Except()
             //First() - връща първото отговарящо на условието в скобите.
             //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
-            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var grouppedElements = listOfStudents.GroupBy(st => st.FirstName0.ToList(); foreach (var group in grouppedElements) { Console.WriteLine(group.Key) foreach (var item in group) { Console.WriteLine("-- " + item.FirstName + " " + item.LastName) }}.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var groups = students.GroupBy(s => s.Group, s => s.Name).OrderBy(x => x.Key); foreach (var group in groups) { Console.WriteLine(group.Key + " - " + string.Join(", ", group)); }. Ако в скобите липсва втори аргумент, добавя целият обект, иначе добавя към групата само посоченият елемент.
             //GroupJoin() - It groups one collection of objects by a key and joins those groups with another collection of keyed objects. With this method, we create a collection where, at each key, a group of results is placed.
             //Intersect()
             //Join() - var arr1 = new int[3] { 1, 25, 300 }; var arr2 = new int[3] { 2, 26, 301 }; var result = arr1.Join(arr2, x => x + 1, y => y, (x, y) => x); /*Избери елемент X от arr1 ако в arr2 има X+1.*/ Console.WriteLine(string.Join(" ", result));
@@ -278,7 +278,7 @@
             //Except()
             //First() - връща първото отговарящо на условието в скобите.
             //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
-            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var grouppedElements = listOfStudents.GroupBy(st => st.FirstName0.ToList(); foreach (var group in grouppedElements) { Console.WriteLine(group.Key) foreach (var item in group) { Console.WriteLine("-- " + item.FirstName + " " + item.LastName) }}.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var groups = students.GroupBy(s => s.Group, s => s.Name).OrderBy(x => x.Key); foreach (var group in groups) { Console.WriteLine(group.Key + " - " + string.Join(", ", group)); }. Ако в скобите липсва втори аргумент, добавя целият обект, иначе добавя към групата само посоченият елемент.
             //GroupJoin() - It groups one collection of objects by a key and joins those groups with another collection of keyed objects. With this method, we create a collection where, at each key, a group of results is placed.
             //Intersect()
             //Join() - var arr1 = new int[3] { 1, 25, 300 }; var arr2 = new int[3] { 2, 26, 301 }; var result = arr1.Join(arr2, x => x + 1, y => y, (x, y) => x); /*Избери елемент X от arr1 ако в arr2 има X+1.*/ Console.WriteLine(string.Join(" ", result));
@@ -363,7 +363,7 @@
             //Except()
             //First() - връща първото отговарящо на условието в скобите.
             //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
-            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var grouppedElements = listOfStudents.GroupBy(st => st.FirstName0.ToList(); foreach (var group in grouppedElements) { Console.WriteLine(group.Key) foreach (var item in group) { Console.WriteLine("-- " + item.FirstName + " " + item.LastName) }}.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var groups = students.GroupBy(s => s.Group, s => s.Name).OrderBy(x => x.Key); foreach (var group in groups) { Console.WriteLine(group.Key + " - " + string.Join(", ", group)); }. Ако в скобите липсва втори аргумент, добавя целият обект, иначе добавя към групата само посоченият елемент.
             //GroupJoin() - It groups one collection of objects by a key and joins those groups with another collection of keyed objects. With this method, we create a collection where, at each key, a group of results is placed.
             //Intersect()
             //Join() - var arr1 = new int[3] { 1, 25, 300 }; var arr2 = new int[3] { 2, 26, 301 }; var result = arr1.Join(arr2, x => x + 1, y => y, (x, y) => x); /*Избери елемент X от arr1 ако в arr2 има X+1.*/ Console.WriteLine(string.Join(" ", result));
@@ -454,7 +454,7 @@
             //Except()
             //First() - връща първото отговарящо на условието в скобите.
             //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
-            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var grouppedElements = listOfStudents.GroupBy(st => st.FirstName0.ToList(); foreach (var group in grouppedElements) { Console.WriteLine(group.Key) foreach (var item in group) { Console.WriteLine("-- " + item.FirstName + " " + item.LastName) }}.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var groups = students.GroupBy(s => s.Group, s => s.Name).OrderBy(x => x.Key); foreach (var group in groups) { Console.WriteLine(group.Key + " - " + string.Join(", ", group)); }. Ако в скобите липсва втори аргумент, добавя целият обект, иначе добавя към групата само посоченият елемент.
             //GroupJoin() - It groups one collection of objects by a key and joins those groups with another collection of keyed objects. With this method, we create a collection where, at each key, a group of results is placed.
             //Intersect()
             //Join() - var arr1 = new int[3] { 1, 25, 300 }; var arr2 = new int[3] { 2, 26, 301 }; var result = arr1.Join(arr2, x => x + 1, y => y, (x, y) => x); /*Избери елемент X от arr1 ако в arr2 има X+1.*/ Console.WriteLine(string.Join(" ", result));
@@ -549,7 +549,7 @@
             //Except()
             //First() - връща първото отговарящо на условието в скобите.
             //FirstOrDefault() - връща първото отговарящо на условието в скобите. Ако не се изпълнява това условие, връща дефолтна стойност.
-            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var grouppedElements = listOfStudents.GroupBy(st => st.FirstName0.ToList(); foreach (var group in grouppedElements) { Console.WriteLine(group.Key) foreach (var item in group) { Console.WriteLine("-- " + item.FirstName + " " + item.LastName) }}.
+            //GroupBy() - Трансформира колекция в групи. Всяка група си има ключ. var groups = students.GroupBy(s => s.Group, s => s.Name).OrderBy(x => x.Key); foreach (var group in groups) { Console.WriteLine(group.Key + " - " + string.Join(", ", group)); }. Ако в скобите липсва втори аргумент, добавя целият обект, иначе добавя към групата само посоченият елемент.
             //GroupJoin() - It groups one collection of objects by a key and joins those groups with another collection of keyed objects. With this method, we create a collection where, at each key, a group of results is placed.
             //Intersect()
             //Join() - var arr1 = new int[3] { 1, 25, 300 }; var arr2 = new int[3] { 2, 26, 301 }; var result = arr1.Join(arr2, x => x + 1, y => y, (x, y) => x); /*Избери елемент X от arr1 ако в arr2 има X+1.*/ Console.WriteLine(string.Join(" ", result));
