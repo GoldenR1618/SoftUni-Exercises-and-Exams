@@ -14,6 +14,22 @@
 
         }
 
+        //Търсене на броя появявания на зададен стринг в по-голям стринг.
+        public static int GetCountOfString(string stringToCheckIn, string stringToLookFor)
+        {
+            int count = 0;
+
+            int index = stringToCheckIn.IndexOf(stringToLookFor);
+
+            while (index >= 0)
+            {
+                count++;
+                index = stringToCheckIn.IndexOf(stringToLookFor, index + stringToLookFor.Length);
+            }
+
+            return count;
+        }
+
         //Arr - Splits the array after the given E.g. [1, 2, 3, 4, 5] -> exchange 2 -> result: [4, 5, 1, 2, 3]
         public static int[] Exchange(int[] arr, int index)
         {
