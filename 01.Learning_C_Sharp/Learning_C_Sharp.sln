@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrices", "Matrices\Matric
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary", "Dictionary\Dictionary.csproj", "{52493D02-9753-4BF4-96AE-7B1426E82822}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asynchronous_Programming", "Asynchronous_Programming\Asynchronous_Programming.csproj", "{A3E1E796-FE69-4D95-B6A9-1C01FBB45AED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{52493D02-9753-4BF4-96AE-7B1426E82822}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52493D02-9753-4BF4-96AE-7B1426E82822}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52493D02-9753-4BF4-96AE-7B1426E82822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E1E796-FE69-4D95-B6A9-1C01FBB45AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E1E796-FE69-4D95-B6A9-1C01FBB45AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E1E796-FE69-4D95-B6A9-1C01FBB45AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E1E796-FE69-4D95-B6A9-1C01FBB45AED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
