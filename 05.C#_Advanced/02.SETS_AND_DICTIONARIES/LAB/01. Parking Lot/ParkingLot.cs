@@ -9,7 +9,7 @@
         {
             var input = Console.ReadLine();
 
-            var parking = new HashSet<string>();
+            var parking = new SortedSet<string>();
 
             while (input != "END")
             {
