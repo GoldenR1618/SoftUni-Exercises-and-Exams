@@ -22,11 +22,11 @@
             {' ', ' ', ' ', '*', ' ', ' ', ' ', '*', ' ', ' '},
         };
 
-        public static char[] path = new char[lab.GetLength(0) * lab.GetLength(1)];
-        public static int position = 0;
-        public static long counter = 0;
-        public static int shortestPath = int.MaxValue;
-        public static int longestPath = 0;
+        private static char[] path = new char[lab.GetLength(0) * lab.GetLength(1)];
+        private static int position = 0;
+        private static long counter = 0;
+        private static int shortestPath = int.MaxValue;
+        private static int longestPath = 0;
 
         public static void Main(string[] args)
         {

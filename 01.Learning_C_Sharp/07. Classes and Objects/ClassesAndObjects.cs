@@ -66,26 +66,32 @@
             firstCat.Awake();
             Console.WriteLine(firstCat.IsAsleep);
             firstCat.GoToSleep();
-            Console.WriteLine(firstCat.SayHello());
-
-            //Генериране на рандом чилса.
-            var random = new Random();              //var random = new Random(100); - Можемн да зададем ръчно инишъл числото. Ако го оставим празно, ще чете милисекунди от времето.
-            var randomNumber = random.Next(2, 6);   //Ще генерира произволно число от 2 до 6-1 -> 5.
-            Console.WriteLine(randomNumber);
+            Console.WriteLine(firstCat.SayHello());            
         }
     }
 
-    public class Cat
-    {
-        public string Name { get; set; }
+    public class Cat                                //Class declaration – това е редът, на който декларираме името на класа.
+    {                                               //Тяло на клас – по подобие на методите, класовете също имат част, която следва декларацията им, оградена с фигурни скоби – "{" и "}" между които се намира съдържанието на класа.
+        private string name;                        //Fields – те са променливи, декларирани в класа. В тях се пазят данни, които отразяват състоянието на обекта и са нужни за работата на методите на класа. Стойността, която се пази в полетата, отразява конкретното състояние на дадения обект, но съществуват и такива полета, наречени статични, които са общи за всички обекти.
+        private string age;
+        private string color;
 
+        public Cat()                                //Default constructor – това е псевдометод, който се из­пол­зва за създа­ване на нови обекти.
+        {
+            this.name = null;
+        }
+
+        public Cat(string name)                     //Constructor.
+        {
+            this.name = name;
+        }
+
+        public string Name { get; set; }            //Свойства (properties) – така наричаме характеристиките на даден клас. Обикновено стойността на тези характеристики се пази в полета. Подобно на полетата, свойствата могат да бъдат притежа­вани само от конкретен обект или да са споделени между всички обекти от тип даден клас.
         public int Age { get; set; }
-
         public string Color { get; set; }
-
         public bool IsAsleep { get; set; }
 
-        public string SayHello()
+        public string SayHello()                    //Методи (methods)
         {
             if (IsAsleep)
             {
@@ -94,12 +100,12 @@
             return $"Hi, I am {Name}! I am {Age} years old!";
         }
 
-        public void GoToSleep()
+        public void GoToSleep()                     //Методи (methods) - void метод.
         {
             IsAsleep = true;
         }
 
-        public void Awake()
+        public void Awake()                         //Методи (methods) - void метод.
         {
             IsAsleep = false;
         }
