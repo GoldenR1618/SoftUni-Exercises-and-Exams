@@ -1,11 +1,8 @@
-﻿namespace BashSoft
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Generic;
 
+namespace BashSoft
+{
     public static class OutputWriter
     {
         public static void WriteMessage(string message)
@@ -29,6 +26,11 @@
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(message);
             Console.ForegroundColor = currentColor;
+        }
+
+        public static void PrintStudent(KeyValuePair<string, List<int>> student)
+        {
+            OutputWriter.WriteMessageOnNewLine(string.Format($"{student.Key} - {string.Join(", ", student.Value)}"));
         }
     }
 }

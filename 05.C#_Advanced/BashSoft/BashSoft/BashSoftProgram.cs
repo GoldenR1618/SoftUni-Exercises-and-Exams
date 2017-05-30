@@ -1,31 +1,39 @@
 ﻿namespace BashSoft
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
-    public class BashSoftProgram
+    class BashSoftProgram
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
+            //Exercise 1 Test
+            //IOManager.TraverseDirectory(@"C:\Users\grigo\Pictures");
 
-        }
+            //Exercise 2 Tests
+            //StudentsRepository.InitializeData();
+            ////StudentsRepository.GetAllStudentsFromCourse("Unity");
+            //StudentsRepository.GetStudentScoresFromCourse("Unity", "Ivan");
 
-        public static void TraverseDirectory(string path)
-        {
-            OutputWriter.WriteEmptyLine;
-            int initialIdentation = path.Split('\\').Length;
-            Queue<string> subFolders = new Queue<string>();
-            subFolders.Enqueue(path);
+            //Exercise 3 Tests
+            //Tester.CompareContent(@"..\..\test1.txt", @"..\..\test2.txt");
+            //Tester.CompareContent(@"..\..\test2.txt", @"..\..\test3.txt");
+            //IOManager.CreateDirectoryInCurrentFolder("pesho");
+            //IOManager.ChangeCurrentDirectoryRelative("pesho");
+            //IOManager.ChangeCurrentDirectoryRelative("..");
+            //IOManager.TraverseDirectory(900);
 
-            while (subFolders.Count != 0)
-            {
-                subFolders.Dequeue();
-                OutputWriter.WriteMessageOnNewLine(path);
-                subFolders.Enqueue(path);
-            }
+            //Exercise 4 Tests
+            //IOManager.ChangeCurrentDirectoryAbsolute(@"C:\Windows");
+            //IOManager.TraverseDirectory(20);
+            //IOManager.CreateDirectoryInCurrentFolder("*gesho");
+            //IOManager.ChangeCurrentDirectoryRelative("..");
+            //IOManager.ChangeCurrentDirectoryRelative("..");
+            //IOManager.ChangeCurrentDirectoryRelative("..");
+            //IOManager.ChangeCurrentDirectoryRelative("..");
+            //IOManager.ChangeCurrentDirectoryRelative("..");
+            //IOManager.ChangeCurrentDirectoryRelative("..");
+            //IOManager.ChangeCurrentDirectoryRelative("..");
+            //IOManager.ChangeCurrentDirectoryRelative("..");
+            //IOManager.ChangeCurrentDirectoryRelative("..");
+
         }
     }
 }
