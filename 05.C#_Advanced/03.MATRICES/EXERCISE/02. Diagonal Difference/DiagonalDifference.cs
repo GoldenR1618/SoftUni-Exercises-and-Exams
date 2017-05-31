@@ -13,7 +13,7 @@
 
             for (int i = 0; i < n; i++)
             {
-                matrix[i] = Console.ReadLine().Split(' ').Select(long.Parse).ToArray();
+                matrix[i] = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Select(long.Parse).ToArray();
             }
 
             //Primary diagonal:
