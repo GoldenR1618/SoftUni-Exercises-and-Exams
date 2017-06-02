@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1CBB061D-9D25-43B0-ADFD-8496C065517E}</ProjectGuid>
+    <ProjectGuid>{E3DF275F-DA56-4CFC-A722-5FE75E8D1E42}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_10.Streams</RootNamespace>
-    <AssemblyName>_10.Streams</AssemblyName>
+    <RootNamespace>_10.Files_and_Streams</RootNamespace>
+    <AssemblyName>_10.Files_and_Streams</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Streams.cs" />
+    <Compile Include="FilesAndStreams.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

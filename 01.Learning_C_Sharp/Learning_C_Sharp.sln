@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00. Test", "00. Test\00. Test.csproj", "{4B92894F-2688-45EF-B250-63E32EBE08E8}"
 EndProject
@@ -23,8 +23,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Exception Handling", "0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Strings and Text Processing", "09. Strings and Text Processing\09. Strings and Text Processing.csproj", "{98A38376-0A37-40D2-83C3-A36E47150074}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Streams", "10. Streams\10. Streams.csproj", "{1CBB061D-9D25-43B0-ADFD-8496C065517E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Lists", "11. Lists\11. Lists.csproj", "{1D6390A3-389E-4DC6-8D42-C172E73980FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. Stacks and Queues", "12. Stacks and Queues\12. Stacks and Queues.csproj", "{59D11F7F-AEB7-490A-91A2-EE76C9675337}"
@@ -42,6 +40,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18. Asynchronous Programming", "18. Asynchronous Programming\18. Asynchronous Programming.csproj", "{2DDD738E-2D50-4DE0-9E02-92390ABCD93A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19. Properties Methods and Extension Methods", "19. Properties Methods and Extension Methods\19. Properties Methods and Extension Methods.csproj", "{48AA530F-BC35-44E3-82C8-BB9088727F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Files and Streams", "10. Files and Streams\10. Files and Streams.csproj", "{E3DF275F-DA56-4CFC-A722-5FE75E8D1E42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,10 +89,6 @@ Global
 		{98A38376-0A37-40D2-83C3-A36E47150074}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98A38376-0A37-40D2-83C3-A36E47150074}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98A38376-0A37-40D2-83C3-A36E47150074}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1CBB061D-9D25-43B0-ADFD-8496C065517E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1CBB061D-9D25-43B0-ADFD-8496C065517E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1CBB061D-9D25-43B0-ADFD-8496C065517E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1CBB061D-9D25-43B0-ADFD-8496C065517E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1D6390A3-389E-4DC6-8D42-C172E73980FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1D6390A3-389E-4DC6-8D42-C172E73980FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D6390A3-389E-4DC6-8D42-C172E73980FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -129,6 +125,10 @@ Global
 		{48AA530F-BC35-44E3-82C8-BB9088727F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48AA530F-BC35-44E3-82C8-BB9088727F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48AA530F-BC35-44E3-82C8-BB9088727F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3DF275F-DA56-4CFC-A722-5FE75E8D1E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3DF275F-DA56-4CFC-A722-5FE75E8D1E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3DF275F-DA56-4CFC-A722-5FE75E8D1E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3DF275F-DA56-4CFC-A722-5FE75E8D1E42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
