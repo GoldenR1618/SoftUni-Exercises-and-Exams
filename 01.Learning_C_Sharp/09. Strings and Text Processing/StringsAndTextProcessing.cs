@@ -10,6 +10,39 @@
     {
         public static void Main(string[] args)
         {
+            //Форматиране на текст:
+            /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+            Console.WriteLine("{0:0.00}", 1);                   //Output: 1,00    
+            Console.WriteLine("{0:#.##}", 0.234);               //Output: ,23    
+            Console.WriteLine("{0:#####}", 12345.67);           //Output: 12346    
+            Console.WriteLine("{0:(0#) ### ## ##}", 29342525);  //Output: (02) 934 25 25    
+            Console.WriteLine("{0:%##}", 0.234);                //Output: %23  
+            /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+            Console.WriteLine("{0:C2}", 123.456);               //Output: 123,46 лв.    
+            Console.WriteLine("{0:D6}", -1234);                 //Output: -001234
+            Console.WriteLine("{0:E2}", 123);                   //Output: 1,23Е+002    
+            Console.WriteLine("{0:F2}", -123.456);              //Output: -123,46    
+            Console.WriteLine("{0:N2}", 1234567.8);             //Output: 1 234 567,80    
+            Console.WriteLine("{0:P}", 0.456);                  //Output: 45,60%    
+            Console.WriteLine("{0:X}", 254);                    //Output: FE    
+            /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+            Console.WriteLine("{0,6}", 123);                    //6 означава броя позиции в които да се падва стринга в дясно.
+            Console.WriteLine("{0,6}", 1234);
+            Console.WriteLine("{0,6}", 12);
+            Console.WriteLine("{0,-6}", 12);                    //-6 падва стринга в ляво.
+            /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+            Console.WriteLine("{0:G}", DayOfWeek.Wednesday);    //Представя енумерацията като стринг (Wednesday).
+            Console.WriteLine("{0:D}", DayOfWeek.Wednesday);    //Представя енумерацията като число (3).
+            Console.WriteLine("{0:X}", DayOfWeek.Wednesday);    //Представя енумерацията като число в шестнадесетичната бройна система и с осем цифри (00000003).
+            /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+            //string.Format() provides a format language to which we add variables.
+            //string.Format("{0:f3}“, number); - Insert  and format double numbers.
+            //string.Format("{0:X}“, number); - Insert and convert to HEX value.
+            /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+            //Insert DateTime
+            string value = string.Format("It is now {0:d} at {0:t}", DateTime.Now); //It is now 4/10/2016 at 10:04 AM
+            /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
             //Case-insensitive
             int result = string.Compare("aaa", "bbb", true);
             // result == 0 if str1 equals str2
@@ -110,6 +143,16 @@
             //str.TrimStart() and str.TrimEnd() - едното реже в началото. Другото в края.
             string s3 = "   C#   ";
             string clean3 = s3.TrimStart(); //clean = "C#   ";
+
+            //str.PadLeft(int totalWidth, char symbol) – adds symbols at the begging.
+            string s4 = "Ana";
+            string padded = s4.PadLeft(5, ' ');
+            Console.WriteLine(padded); // '   Ana' 
+
+            //str.PadRight(int totalWidth, char symbol) – adds symbols at the end.
+            string s5 = "Ana";
+            string padded2 = s5.PadRight(5, ' ');
+            Console.WriteLine(padded2); // 'Ana   ' 
 
             //StringBuilder - keeps a buffer memory, allocated in advance.
             //Use StringBuilder if you need to keep adding characters to a string.
