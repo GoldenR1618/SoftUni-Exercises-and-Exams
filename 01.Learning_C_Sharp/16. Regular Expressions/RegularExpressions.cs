@@ -41,11 +41,11 @@
 
 
             //Greedy repetition:
-            //"\.+"
+            //".+"
             //Text "with" some "quotations". -> "with" some "quotations" - мачва целият текст между първата и последната кавичка.
 
             //Lazy repetition
-            //"\.+?"
+            //".+?"
             //Text "with" some "quotations". -> "with", "quotations" - мачва всички думи между кавички.
 
 
