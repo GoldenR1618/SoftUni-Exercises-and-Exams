@@ -7,11 +7,9 @@
     {
         public static void Main(string[] args)
         {
-            //  80/100
-
             string time = Console.ReadLine();
 
-            Regex regex = new Regex(@"^(0[0-9]|1[01]):[0-5][0-9]:[0-5][0-9] [AP]M$");
+            Regex regex = new Regex(@"^(0[0-9]|1[012]):[0-5][0-9]:[0-5][0-9] [AP]M$");
 
             while (time != "END")
             {
