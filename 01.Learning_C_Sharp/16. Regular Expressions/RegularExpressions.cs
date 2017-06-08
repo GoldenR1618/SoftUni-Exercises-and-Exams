@@ -15,6 +15,7 @@
             //[^abc] – matches any character that is not a, b or c
             //[0-9] - Character range: Мatches any digit frm 0 to 9
             //[a|b] - a или b.
+            //. - Мatches any character
 
             //\w – Matches any word character (a-z, A-Z, 0-9, _)
             //\W – Matches any non - word character(the opposite of \w)
@@ -39,9 +40,19 @@
 
 
 
+            //Greedy repetition:
+            //"\.+"
+            //Text "with" some "quotations". -> "with" some "quotations" - мачва целият текст между първата и последната кавичка.
+
+            //Lazy repetition
+            //"\.+?"
+            //Text "with" some "quotations". -> "with", "quotations" - мачва всички думи между кавички.
+
+
+
             //Anchors
             //^ -The match must start at the beginning of the string or line
-            //$ -The match must occur at the end of the string
+            //$ -The match must occur at the end of the string or before \n
             //Пример - ^\w{6,12}$ - user name validation - Започваш с дума от 6 до 12 символа и завършваш само с това. Нищо след нея няма.
             //{6,12} - от 6 до 12. {6,} - минимум 6 символа. {6} - точно 6 символа.
 
@@ -79,7 +90,7 @@
 
 
 
-            //.*? - хва]a всичко до първияt срещнат препинателен знак.
+            //.*? - хващa всичко до първият срещнат препинателен знак.
             //\btext\b - word boundary.
 
 
