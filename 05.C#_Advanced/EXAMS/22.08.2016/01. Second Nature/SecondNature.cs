@@ -10,6 +10,10 @@
     {
         public static void Main(string[] args)
         {
+            List<int> flowers = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
+            List<int> buckets = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
+
+
 
         }
     }
