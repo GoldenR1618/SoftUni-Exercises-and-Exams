@@ -11,6 +11,13 @@
     {
         public static void Main(string[] args)
         {
+            //Implicit lambda expression: msg => Console.WriteLine(msg);
+            //Explicit lambda expression: (String msg) => { Console.WriteLine(msg); }
+            //Zero parameters: () => { Console.WriteLine("hi"); }
+            //More parameters: (int x, int y) => { return x + y; }
+            
+
+
             //Instead of writing the method we can do:
             Action<string> print = message => Console.WriteLine(message);   //In .NET Action<T> is a void method.
 
