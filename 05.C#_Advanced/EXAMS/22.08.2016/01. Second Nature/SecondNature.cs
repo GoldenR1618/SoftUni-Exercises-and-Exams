@@ -14,7 +14,7 @@
             List<int> buckets = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
 
 
-
+            
         }
     }
 }
