@@ -165,6 +165,10 @@
             //.Insert(int index, string str) - inserts given string (or object) at given position
             //.Replace(string oldStr, string newStr) - replaces all occurrences of a substring
             //.ToString() - converts the StringBuilder to String
+
+            //StartsWith - проверява дали стринга започва със посочен патерн.
+            //EndsWith - проверява дали стринга завършва със посочен патерн.
+
             //Програма за ревърс на символите в един стринг.
             string input2 = Console.ReadLine();
 

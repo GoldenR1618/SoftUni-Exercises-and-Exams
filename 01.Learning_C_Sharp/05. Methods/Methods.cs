@@ -358,5 +358,52 @@
 
             return factorial;
         }
+
+        //From base N to base 10 converter
+        public static BigInteger FromBaseNtoBase10Converter(BigInteger nBase, BigInteger number)
+        {
+            string strBaseNnumber = number.ToString();
+
+            BigInteger result = 0;
+
+            for (int i = strBaseNnumber.Length - 1, j = 0; i >= 0; i--, j++)
+            {
+                int num = int.Parse(strBaseNnumber[i].ToString());
+                BigInteger pow = 1;
+
+                for (int k = 1; k <= j; k++)
+                {
+                    pow *= nBase;
+                }
+
+                result += num * pow;
+            }
+
+            return result;
+        }
+
+        //From base 10 to base N converter
+        public static string FromBase10ToBaseNconverter(BigInteger nBase, BigInteger decNumber)
+        {
+            StringBuilder rs = new StringBuilder();
+
+            while (decNumber > 0)
+            {
+                BigInteger rem = decNumber % nBase;
+                rs.Append(rem);
+                decNumber = decNumber / nBase;
+            }
+
+            string str = rs.ToString();
+
+            StringBuilder result = new StringBuilder();
+
+            for (int i = str.Length - 1; i >= 0; i--)
+            {
+                result.Append(str[i]);
+            }
+
+            return result.ToString();
+        }
     }
 }
