@@ -74,9 +74,15 @@ class StartUp
                 else    //Няма такъв покемон.
                 {
                     //Всички покемони губят 10 здраве.
-                    foreach (var pokemon in trainer.ListOfPokemons)
+                    for (int i = 0; i < trainer.ListOfPokemons.Count; i++)
                     {
-                        pokemon.Health -= 10;
+                        trainer.ListOfPokemons[i].Health -= 10;
+
+                        if (trainer.ListOfPokemons[i].Health <= 0)   //Ако покемона е умрял се маха.
+                        {
+                            trainer.ListOfPokemons.RemoveAt(i);
+                            i--;
+                        }
                     }
                 }
             }
@@ -86,7 +92,7 @@ class StartUp
 
         foreach (var trainer in listOfTrainers.OrderByDescending(x => x.NumberOfBadges))
         {
-            Console.WriteLine($"{trainer.Name} {trainer.NumberOfBadges} {trainer.ListOfPokemons.Where(x => x.Health > 0).ToList().Count}");
+            Console.WriteLine($"{trainer.Name} {trainer.NumberOfBadges} {trainer.ListOfPokemons.Count}");
         }
     }
 }
