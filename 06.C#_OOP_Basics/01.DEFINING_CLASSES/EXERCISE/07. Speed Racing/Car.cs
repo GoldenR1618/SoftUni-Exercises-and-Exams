@@ -26,6 +26,25 @@ public class Car
     {
         Car currentCar = listOfCars.Where(x => x.Model == model).ToList()[0];
 
+        double maxDist = currentCar.FuelAmount / currentCar.FuelConsumptionFor1km;
+        double fuelUsed = amountOfKm * currentCar.FuelConsumptionFor1km;
 
+        if (maxDist >= amountOfKm)
+        {
+            currentCar.FuelAmount -= fuelUsed;
+            currentCar.DistanceTraveled += amountOfKm;
+        }
+        else
+        {
+            Console.WriteLine("Insufficient fuel for the drive");
+        }
+    }
+
+    public void PrintCars()
+    {
+        foreach (var car in this.listOfCars)
+        {
+            Console.WriteLine($"{car.Model} {car.FuelAmount:F2} {car.DistanceTraveled}");
+        }
     }
 }

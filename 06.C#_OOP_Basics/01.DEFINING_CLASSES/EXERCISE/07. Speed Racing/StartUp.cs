@@ -43,5 +43,7 @@ public class StartUp
 
             input = Console.ReadLine();
         }
+
+        car.PrintCars();
     }
 }
