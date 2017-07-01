@@ -10,6 +10,27 @@
     {
         public static void Main(string[] args)
         {
+            //Private Access Modifier:
+            //Main way that an object encapsulates itself and hides data from the outside world.
+            //Class and interfaces cannot be private.
+            //Can only be accessed within the declared class itself.
+
+            //Protected Access Modifier:
+            //Can be accessed only by the subclasses.
+            //Class and interfaces cannot be protected.
+            //Preventing a nonrelated class from trying to use it.
+
+            //Internal Access Modifier:
+            //Internal is default modifier in C#. 
+            //Available to any other class in the same project.
+
+            //Public Access Modifier:
+            //A Class, method, constructor declared inside a public class can be accessed from any class belonging to the .NET World.
+            //Using are needed if we try to access public class in different namespace.
+            //The main() method of an application has to be public.
+
+
+
             //Дефиниране на обект от тип котка:
             Cat firstCat = new Cat();
             Cat secondCat = new Cat();
@@ -121,7 +142,7 @@
             {
                 if (name == null)
                 {
-                    throw new ArgumentException("Name is missing...");          //Всички валидации се правят САМО в пропъртитата!!!
+                    throw new ArgumentException("Name is missing...");          //Всички валидации се правят САМО в SET-ра на пропъртитата!!!
                 }
 
                 this.name = value;
@@ -138,7 +159,7 @@
             {
                 if (age == 0)
                 {
-                    throw new ArgumentException("Age is missing...");           //Всички валидации се правят САМО в пропъртитата!!!
+                    throw new ArgumentException("Age is missing...");           //Всички валидации се правят САМО в SET-ра на пропъртитата!!!
                 }
 
                 this.age = value;
