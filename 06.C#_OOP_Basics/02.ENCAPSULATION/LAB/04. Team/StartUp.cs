@@ -8,19 +8,20 @@ public class StartUp
 {
     public static void Main(string[] args)
     {
-        int lines = int.Parse(Console.ReadLine());
-        List<Person> persons = new List<Person>();
+        List<Person> listOfPersons = new List<Person>();
 
-        for (int i = 0; i < lines; i++)
+        int n = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < n; i++)
         {
             try
             {
-                var cmdArgs = Console.ReadLine().Split();
-                var person = new Person(cmdArgs[0],
+                string[] cmdArgs = Console.ReadLine().Split();
+                Person person = new Person(cmdArgs[0],
                                         cmdArgs[1],
                                         int.Parse(cmdArgs[2]),
                                         double.Parse(cmdArgs[3]));
-                persons.Add(person);
+                listOfPersons.Add(person);
             }
             catch (Exception e)
             {
@@ -29,7 +30,7 @@ public class StartUp
         }
 
         Team team = new Team("BestTeam");
-        persons.ForEach(p => team.AddPlayer(p));
+        listOfPersons.ForEach(p => team.AddPlayer(p));
 
         Console.WriteLine(team.ToString());
     }
