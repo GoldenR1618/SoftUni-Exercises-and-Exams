@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 public class StartUp
 {
@@ -23,7 +20,6 @@ public class StartUp
             }
             catch (Exception e)
             {
-
                 Console.WriteLine(e.Message);
             }
         }

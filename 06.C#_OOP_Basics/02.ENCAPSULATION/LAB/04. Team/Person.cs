@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 public class Person
 {
@@ -32,6 +28,7 @@ public class Person
             this.firstName = value;
         }
     }
+
     public string LastName
     {
         get { return this.lastName; }
@@ -45,6 +42,7 @@ public class Person
             this.lastName = value;
         }
     }
+
     public int Age
     {
         get { return this.age; }
@@ -58,6 +56,7 @@ public class Person
             this.age = value;
         }
     }
+
     public double Salary
     {
         get { return this.salary; }
