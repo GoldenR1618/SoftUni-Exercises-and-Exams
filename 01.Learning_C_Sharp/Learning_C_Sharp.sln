@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00. Test", "00. Test\00. Test.csproj", "{4B92894F-2688-45EF-B250-63E32EBE08E8}"
 EndProject
@@ -16,8 +16,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Methods", "05. Methods\05. Methods.csproj", "{7ACCCF5B-35C9-4D79-AF95-BA71AF9AA090}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Recursion", "06. Recursion\06. Recursion.csproj", "{3A336728-60E0-4514-8ECD-4023D107C027}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Classes and Objects", "07. Classes and Objects\07. Classes and Objects.csproj", "{45AD3AA4-1B50-43D5-B56B-CE198A9D9787}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Exception Handling", "08. Exception Handling\08. Exception Handling.csproj", "{2A8D4016-AB7C-4F70-9F37-DC35363A6A6F}"
 EndProject
@@ -77,10 +75,6 @@ Global
 		{3A336728-60E0-4514-8ECD-4023D107C027}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A336728-60E0-4514-8ECD-4023D107C027}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A336728-60E0-4514-8ECD-4023D107C027}.Release|Any CPU.Build.0 = Release|Any CPU
-		{45AD3AA4-1B50-43D5-B56B-CE198A9D9787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45AD3AA4-1B50-43D5-B56B-CE198A9D9787}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45AD3AA4-1B50-43D5-B56B-CE198A9D9787}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45AD3AA4-1B50-43D5-B56B-CE198A9D9787}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2A8D4016-AB7C-4F70-9F37-DC35363A6A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2A8D4016-AB7C-4F70-9F37-DC35363A6A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A8D4016-AB7C-4F70-9F37-DC35363A6A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
