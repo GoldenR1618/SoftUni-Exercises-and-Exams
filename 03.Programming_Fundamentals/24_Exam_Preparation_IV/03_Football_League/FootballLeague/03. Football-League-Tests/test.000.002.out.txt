@@ -1,0 +1,9 @@
+League standings:
+1. BULGARIA 4
+2. ITALY 2
+3. DENMAR 1
+4. DENMARK 0
+Top 3 scored goals:
+- ITALY -> 5
+- DENMAR -> 4
+- BULGARIA -> 3

@@ -1,0 +1,20 @@
+League standings:
+1. BULGARIA 6
+2. SPAIN 5
+3. ITALY 4
+4. RUSSIA 4
+5. A 3
+6. KOTKA 3
+7. TURTLE 3
+8.  1
+9. ENGLAND 1
+10. KKK 1
+11. SWEDEN 1
+12. B 0
+13. GERMANY 0
+14. KFC 0
+15. KUCHE 0
+Top 3 scored goals:
+- A -> 15
+- SPAIN -> 9
+- BULGARIA -> 6

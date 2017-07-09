@@ -1,0 +1,8 @@
+League standings:
+1. A 2
+2. B 2
+3. C 2
+Top 3 scored goals:
+- B -> 3
+- C -> 3
+- A -> 2

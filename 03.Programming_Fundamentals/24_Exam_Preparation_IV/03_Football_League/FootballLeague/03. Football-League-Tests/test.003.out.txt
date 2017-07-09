@@ -1,0 +1,11 @@
+League standings:
+1. BG 4
+2. NO 3
+3. USA 3
+4. GB 1
+5. FR 0
+6. GR 0
+Top 3 scored goals:
+- BG -> 7
+- GB -> 7
+- NO -> 3

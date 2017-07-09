@@ -1,0 +1,11 @@
+SortPts
+SortPtsYLATISortPts SortPtsLATISortPts 3:3
+SortPtsYLATISortPts SortPtsLATISortPts 3:3
+SortPtsYLATISortPts SortPtsLATISortPts 3:3
+SortPtsYLATISortPts SortPtsATISortPts 3:3
+SortPtsYLATISortPts SortPtsATISortPts 3:3
+SortPtsYLATISortPts SortPtsATISortPts 3:3
+SortPtsLATISortPts SortPtsATISortPts 3:3
+SortPtsLATISortPts SortPtsATISortPts 3:3
+SortPtsLATISortPts SortPtsATISortPts 3:3
+final

@@ -1,0 +1,9 @@
+<>
+<>EcNaRf<> <>AiraGLub<> 2:1
+<>nIaPs<> <>aIRagLuB<> 2:2
+<>EcNaRf<> <>aIrAglub<> 1:4
+<>nIaPs<> <>ecnarf<> 3:1
+<>AIRaGLUb<> <>nIApS<> 1:2
+<>eCNarf<> <>aIRagLUB<> 3:7
+<>eCNarf<> <>aIraglUb<> 3:4
+final
