@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19. Properties Methods and 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Files and Streams", "10. Files and Streams\10. Files and Streams.csproj", "{E3DF275F-DA56-4CFC-A722-5FE75E8D1E42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Classes and Objects", "07. Classes and Objects\07. Classes and Objects.csproj", "{E981C86D-8011-43E8-94D5-E26DBC8729BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{E3DF275F-DA56-4CFC-A722-5FE75E8D1E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3DF275F-DA56-4CFC-A722-5FE75E8D1E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3DF275F-DA56-4CFC-A722-5FE75E8D1E42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E981C86D-8011-43E8-94D5-E26DBC8729BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E981C86D-8011-43E8-94D5-E26DBC8729BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E981C86D-8011-43E8-94D5-E26DBC8729BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E981C86D-8011-43E8-94D5-E26DBC8729BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
