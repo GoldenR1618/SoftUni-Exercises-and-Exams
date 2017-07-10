@@ -42,11 +42,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StartUp.cs" />
+    <Compile Include="Model\Animals\Animal.cs" />
+    <Compile Include="Model\Animals\Cat.cs" />
+    <Compile Include="Model\Animals\Felime.cs" />
+    <Compile Include="Model\Animals\Tiger.cs" />
+    <Compile Include="Model\Foods\Food.cs" />
+    <Compile Include="Model\Animals\Mammal.cs" />
+    <Compile Include="Model\Foods\Meat.cs" />
+    <Compile Include="Model\Animals\Mouse.cs" />
+    <Compile Include="Model\Animals\StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Model\Foods\Vegetable.cs" />
+    <Compile Include="Model\Animals\Zebra.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
