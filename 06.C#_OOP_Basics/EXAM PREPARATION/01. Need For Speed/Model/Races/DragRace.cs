@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class StartUp
+public class DragRace : Race
 {
-    public static void Main()
+    public DragRace(int length, string route, int prizePool) : base(length, route, prizePool)
     {
-        Engine engine = new Engine();
-        engine.Run();
     }
 }

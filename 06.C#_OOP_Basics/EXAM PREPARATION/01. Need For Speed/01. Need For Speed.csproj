@@ -42,6 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\CarManager.cs" />
+    <Compile Include="Controller\Engine.cs" />
+    <Compile Include="Model\Cars\Car.cs" />
+    <Compile Include="Model\Cars\PerformanceCar.cs" />
+    <Compile Include="Model\Cars\ShowCar.cs" />
+    <Compile Include="Model\Garage.cs" />
+    <Compile Include="Model\Races\CasualRace.cs" />
+    <Compile Include="Model\Races\DragRace.cs" />
+    <Compile Include="Model\Races\DriftRace.cs" />
+    <Compile Include="Model\Races\Race.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
