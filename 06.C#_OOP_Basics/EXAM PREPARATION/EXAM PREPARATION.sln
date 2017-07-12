@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Need For Speed", "01. Need For Speed\01. Need For Speed.csproj", "{9BA9E0FE-13E2-4514-8F0F-915F7104AC5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Avatar", "02. Avatar\02. Avatar.csproj", "{89C8B062-E363-4F91-91AC-2FCC8AD5D7BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9BA9E0FE-13E2-4514-8F0F-915F7104AC5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BA9E0FE-13E2-4514-8F0F-915F7104AC5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BA9E0FE-13E2-4514-8F0F-915F7104AC5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89C8B062-E363-4F91-91AC-2FCC8AD5D7BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89C8B062-E363-4F91-91AC-2FCC8AD5D7BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89C8B062-E363-4F91-91AC-2FCC8AD5D7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89C8B062-E363-4F91-91AC-2FCC8AD5D7BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
