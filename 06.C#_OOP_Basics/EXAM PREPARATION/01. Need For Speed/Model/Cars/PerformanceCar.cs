@@ -1,48 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 public class PerformanceCar : Car
 {
     private List<string> addOns;
 
-    public PerformanceCar(string brand, string model,
-        int yearOfProduction, int horsepower,
-        int acceleration, int suspension,
-        int durability)
-        : base(brand, model, yearOfProduction,
-            horsepower, acceleration,
-            suspension, durability)
+    public PerformanceCar(string brand, string model, int yearOfProduction, int horsePower, int acceleration, int suspension, int durability) : base(brand, model, yearOfProduction, (horsePower * 150) / 100, acceleration, (suspension * 75) / 100, durability)
     {
-        this.addOns = new List<string>();
+        this.AddOns = new List<string>();
     }
 
-    public IReadOnlyCollection<string> AddOns
+    public List<string> AddOns
     {
-        get
-        {
-            return this.addOns.AsReadOnly();
-        }
+        get { return this.addOns; }
+        set { this.addOns = value; }
     }
 
-    public void Increases()
+    public override void Tune(int tuneIndex, string addOn)
     {
-
-    }
-    public void Decreases()
-    {
-
-    }
-
-    public void AddAddOns(string addOns)
-    {
-        this.addOns.Add(addOns);
+        base.Tune(tuneIndex, addOn);
+        this.AddOns.Add(addOn);
     }
 
     public override string ToString()
     {
-        return base.ToString();
+        string result = base.ToString();
+
+        result += "Add-ons: ";
+
+        if (this.AddOns.Count <= 0)
+        {
+            result += "None";
+        }
+        else
+        {
+            result += string.Join(", ", this.AddOns);
+        }
+
+        return result;
     }
 }

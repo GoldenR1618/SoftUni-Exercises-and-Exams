@@ -1,28 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 public class Garage
 {
-    private List<Car> parkedCars;
+    private HashSet<Car> parkedCars;
 
     public Garage()
     {
-        this.parkedCars = new List<Car>();
+        this.ParkedCars = new HashSet<Car>();
     }
 
-    public IReadOnlyCollection<Car> ParkedCars
+    public HashSet<Car> ParkedCars
     {
-        get
-        {
-            return this.parkedCars.AsReadOnly();
-        }
-    }
-
-    public void AddCar(Car car)
-    {
-        this.parkedCars.Add(car);
+        get { return this.parkedCars; }
+        private set { this.parkedCars = value; }
     }
 }
