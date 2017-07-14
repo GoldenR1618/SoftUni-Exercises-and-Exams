@@ -8,13 +8,19 @@ public class AirMonument : Monument
 {
     private int airAffinity;
 
-    public AirMonument(string name) : base(name)
+    public AirMonument(string name, int airAffinity) : base(name)
     {
+        this.AirAffinity = airAffinity;
     }
 
     public int AirAffinity
     {
         get { return this.airAffinity; }
         protected set { this.airAffinity = value; }
+    }
+
+    public override string ToString()
+    {
+        return "Air " + base.ToString() + $"Air Affinity: {AirAffinity}";
     }
 }

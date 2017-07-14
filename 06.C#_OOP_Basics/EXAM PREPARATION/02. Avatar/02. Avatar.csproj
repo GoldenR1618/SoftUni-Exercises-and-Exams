@@ -53,7 +53,6 @@
     <Compile Include="Model\Monuments\FireMonument.cs" />
     <Compile Include="Model\Monuments\Monument.cs" />
     <Compile Include="Model\Monuments\WaterMonument.cs" />
-    <Compile Include="Model\Nation.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -18,4 +18,9 @@ public abstract class Monument
         get { return this.name; }
         protected set { this.name = value; }
     }
+
+    public override string ToString()
+    {
+        return $"Monument: {Name}, ";
+    }
 }

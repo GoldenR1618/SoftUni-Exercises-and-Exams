@@ -20,9 +20,17 @@ public abstract class Bender
         get { return this.name; }
         protected set { this.name = value; }
     }
+
     public int Power
     {
         get { return this.power; }
         protected set { this.power = value; }
+    }
+
+    public abstract double TotalPower();
+
+    public override string ToString()
+    {
+        return $"Bender: {Name}, Power: {Power}, ";
     }
 }
