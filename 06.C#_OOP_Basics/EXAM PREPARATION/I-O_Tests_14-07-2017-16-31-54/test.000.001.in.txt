@@ -1,7 +1,0 @@
-﻿Bender Fire Tony 1000 2500.5667
-Bender Fire Donald 1000 2100
-Bender Air Yu 1000 1230
-War Fire
-War Air
-War Fire
-Quit
