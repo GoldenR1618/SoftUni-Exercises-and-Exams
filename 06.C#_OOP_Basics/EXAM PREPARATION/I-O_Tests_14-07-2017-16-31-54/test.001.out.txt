@@ -1,0 +1,6 @@
+﻿Fire Nation
+Benders:
+###Fire Bender: Jun, Power: 200, Heat Aggression: 1000.40
+###Fire Bender: Sing, Power: 300, Heat Aggression: 100.40
+Monuments: None
+War 1 issued by Fire

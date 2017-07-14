@@ -1,0 +1,9 @@
+﻿Air Nation
+Benders:
+###Air Bender: Yu, Power: 1000000000, Aerial Integrity: 1000000.00
+Monuments:
+###Air Monument: AerialGod, Air Affinity: 1000000000
+Fire Nation
+Benders: None
+Monuments: None
+War 1 issued by Fire

@@ -1,0 +1,11 @@
+﻿Monument Fire DevilHorn 1000
+Monument Fire BelzebubNail 1000
+Monument Fire AzazelSword 1000
+Bender Air Lin 1 1
+War Air
+Status Fire
+Bender Water Sing 1000 1000
+War Water
+Status Water
+Status Air
+Quit

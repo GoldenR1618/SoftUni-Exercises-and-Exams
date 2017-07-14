@@ -8,8 +8,6 @@ public class StartUp
 {
     public static void Main()
     {
-        //  250 / 300
-
         NationsBuilder nb = new NationsBuilder();
 
         string input = Console.ReadLine();

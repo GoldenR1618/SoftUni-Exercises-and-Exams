@@ -125,7 +125,7 @@ public class NationsBuilder
                     {
                         if (benders[i] is EarthBender current)
                         {
-                            sb.AppendLine(current.ToString());
+                            sb.AppendLine("###" + current.ToString());
                         }
                     }
                     break;
@@ -259,11 +259,26 @@ public class NationsBuilder
             }
         }
 
-        airBenderTotalPower = (airBenderTotalPower / 100) * totalAirAffinity;
-        waterBenderTotalPower = (waterBenderTotalPower / 100) * totalWaterAffinity;
-        fireBenderTotalPower = (fireBenderTotalPower / 100) * totalFireAffinity;
-        earthBenderTotalPower = (earthBenderTotalPower / 100) * totalEarthAffinity;
+        if (totalAirAffinity > 0)
+        {
+            airBenderTotalPower = (airBenderTotalPower / 100) * totalAirAffinity;
+        }
 
+        if (totalWaterAffinity > 0)
+        {
+            waterBenderTotalPower = (waterBenderTotalPower / 100) * totalWaterAffinity;
+        }
+
+        if (totalFireAffinity > 0)
+        {
+            fireBenderTotalPower = (fireBenderTotalPower / 100) * totalFireAffinity;
+        }
+
+        if (totalEarthAffinity > 0)
+        {
+            earthBenderTotalPower = (earthBenderTotalPower / 100) * totalEarthAffinity;
+        }
+        
         if (airBenderTotalPower > waterBenderTotalPower &&
             airBenderTotalPower > fireBenderTotalPower &&
             airBenderTotalPower > earthBenderTotalPower)
