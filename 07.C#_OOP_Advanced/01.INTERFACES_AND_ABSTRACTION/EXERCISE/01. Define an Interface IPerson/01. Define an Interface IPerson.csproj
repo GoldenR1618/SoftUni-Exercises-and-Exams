@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E847AEE5-0AA6-4E3D-8709-109C2156DEC5}</ProjectGuid>
+    <ProjectGuid>{F1EEF91D-3328-464E-8775-F1572137EAD8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_02.Cars</RootNamespace>
-    <AssemblyName>02.Cars</AssemblyName>
+    <RootNamespace>_01.Define_an_Interface_IPerson</RootNamespace>
+    <AssemblyName>_01.Define_an_Interface_IPerson</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,13 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Car.cs" />
-    <Compile Include="ICar.cs" />
-    <Compile Include="IElectricCar.cs" />
-    <Compile Include="Seat.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tesla.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E847AEE5-0AA6-4E3D-8709-109C2156DEC5}</ProjectGuid>
+    <ProjectGuid>{BB2A60B8-7BF2-4D2B-9A8C-A30A9B2DFB7C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_02.Cars</RootNamespace>
-    <AssemblyName>02.Cars</AssemblyName>
+    <RootNamespace>_09.Collection_Hierarchy</RootNamespace>
+    <AssemblyName>_09.Collection_Hierarchy</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,13 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Car.cs" />
-    <Compile Include="ICar.cs" />
-    <Compile Include="IElectricCar.cs" />
-    <Compile Include="Seat.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tesla.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
