@@ -18,22 +18,36 @@
             //Achieved with access modifiers(private, public…)
             //Encapsulation is used to hide the code and data inside a single unit to protect the data from the outside the world.
 
+            //Класовете могат да наследяват освен един клас, колкото си искаме интерфейси:
+            //public interface IAnimal
+            //public abstract class Mammal
+            //public class Person : Mammal, IAnimal
+
+            //Най-честата структура в практиката е:
+            //1. Няколко интерфейса най-отгоре.
+            //2. Абстрактен клас описващ общите черти.
+            //3. Конкретни класове описващи конкретиките.
+
             IAnimal cat = new Cat("Moli", 13);
             IAnimal dog = new Dog("Dzhak", 12);
         }
     }
 
-    public interface IAnimal
-    {
-        string Name { get; }    //Няма аксес модифаери на пропъртитата и методите, защото всички са public по дифолт.
+    public interface IAnimal    //Интерфейс използваме, когато искаме да опишем общи черти с различно поведение в наследниците.
+    {                           //Не може да имаме полета, константи и конструктори.
+        string Name { get; }    //Няма аксес модифаери на пропъртитата и методите, защото всички са public по дифолт. Може САМО автоматични пропъртита.
 
         int Age { get; }        //Не пишем сетъри. Ако са ни необходими ги добавяме в наследените класове.
 
         string MakeNoise();     //Не може да имаме тяло на метод.
+    }
+
+    public abstract class Animal    //Абстрактен клас използваме за да опишем всички общи черти с еднакво/подобно поведение в наследниците.
+    {
 
     }
 
-    public class Cat : IAnimal
+    public class Cat : Animal, IAnimal
     {
         private string name;
         private int age;
@@ -53,7 +67,7 @@
         }
     }
 
-    public class Dog : IAnimal
+    public class Dog : Animal, IAnimal
     {
         private string name;
         private int age;
