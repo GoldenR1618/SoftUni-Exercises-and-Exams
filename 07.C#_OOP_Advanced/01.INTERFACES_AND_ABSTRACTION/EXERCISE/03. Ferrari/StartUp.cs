@@ -1,13 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 public class StartUp
 {
     public static void Main(string[] args)
     {
+        string ferrariName = typeof(Ferrari).Name;
+        string iCarInterfaceName = typeof(ICar).Name;
 
+        bool isCreated = typeof(ICar).IsInterface;
+        if (!isCreated)
+        {
+            throw new Exception("No interface ICar was created");
+        }
+
+        string driver = Console.ReadLine();
+
+        ICar car = new Ferrari(driver);
+
+        StringBuilder sb = new StringBuilder();
+        sb.AppendLine($"{car.Model}/{car.Brakes()}/{car.Gas()}/{car.Driver}");
+        Console.WriteLine(sb.ToString());
     }
 }

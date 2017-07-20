@@ -44,6 +44,10 @@
   <ItemGroup>
     <Compile Include="InterfacesAndAbstraction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Telephony\Engine.cs" />
+    <Compile Include="Telephony\IBrowsingWideWeb.cs" />
+    <Compile Include="Telephony\ICallOtherPhones.cs" />
+    <Compile Include="Telephony\Smartphone.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
