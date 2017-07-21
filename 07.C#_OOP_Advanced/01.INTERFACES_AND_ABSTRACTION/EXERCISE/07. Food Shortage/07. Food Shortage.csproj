@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Citizen.cs" />
+    <Compile Include="IBuyer.cs" />
+    <Compile Include="IPerson.cs" />
+    <Compile Include="Rebel.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

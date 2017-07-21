@@ -180,8 +180,8 @@
             Console.WriteLine(thousandDaysAfteerBirth.ToString("dd-MM-yyyy"));
             /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
             DateTime d = new DateTime(2009, 10, 23, 15, 30, 22);
-            Console.WriteLine("{0:dd/MM/yyyy HH:mm:ss}", d);                //(23/10/ 2009 15:30:22)
-            Console.WriteLine("{0:d.MM.yy г .}", d);                        //(23/10/ 09 г .)
+            Console.WriteLine("{0:dd/MM/yyyy HH:mm:ss}", d);                //(23/10/2009 15:30:22)
+            Console.WriteLine("{0:d.MM.yy г.}", d);                        //(23.10.09 г.)
             /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
                                                                             //Write a program that reads two dates in format dd-MM-yyyy and prints the number of working days between these two dates inclusive.
             DateTime startDate = DateTime.ParseExact(Console.ReadLine(), "dd-MM-yyyy", CultureInfo.InvariantCulture);

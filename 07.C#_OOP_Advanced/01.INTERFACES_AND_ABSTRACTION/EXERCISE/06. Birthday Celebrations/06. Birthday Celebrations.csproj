@@ -42,6 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Citizen.cs" />
+    <Compile Include="IBirthdate.cs" />
+    <Compile Include="IId.cs" />
+    <Compile Include="IName.cs" />
+    <Compile Include="IPerson.cs" />
+    <Compile Include="Pet.cs" />
+    <Compile Include="Robot.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
