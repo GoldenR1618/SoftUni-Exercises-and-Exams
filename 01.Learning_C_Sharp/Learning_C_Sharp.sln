@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00. Test", "00. Test\00. Test.csproj", "{4B92894F-2688-45EF-B250-63E32EBE08E8}"
 EndProject
@@ -44,6 +44,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Classes and Objects", "07. Classes and Objects\07. Classes and Objects.csproj", "{E981C86D-8011-43E8-94D5-E26DBC8729BE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20. Interfaces and Abstraction", "20. Interfaces and Abstraction\20. Interfaces and Abstraction.csproj", "{84C78CB7-42B3-4607-8CF6-77DFFE30A524}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21. Generics", "21. Generics\21. Generics.csproj", "{C8D8A6C5-15DA-45A8-ACA3-93E20327C13E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{84C78CB7-42B3-4607-8CF6-77DFFE30A524}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84C78CB7-42B3-4607-8CF6-77DFFE30A524}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84C78CB7-42B3-4607-8CF6-77DFFE30A524}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8D8A6C5-15DA-45A8-ACA3-93E20327C13E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D8A6C5-15DA-45A8-ACA3-93E20327C13E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8D8A6C5-15DA-45A8-ACA3-93E20327C13E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D8A6C5-15DA-45A8-ACA3-93E20327C13E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
