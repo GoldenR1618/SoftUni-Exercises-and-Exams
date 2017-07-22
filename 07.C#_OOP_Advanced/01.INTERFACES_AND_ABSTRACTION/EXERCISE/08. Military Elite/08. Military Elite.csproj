@@ -42,6 +42,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Commando.cs" />
+    <Compile Include="Classes\Engineer.cs" />
+    <Compile Include="Classes\LeutenantGeneral.cs" />
+    <Compile Include="Interfaces\ICommando.cs" />
+    <Compile Include="Interfaces\IEngineer.cs" />
+    <Compile Include="Interfaces\ILeutenantGeneral.cs" />
+    <Compile Include="Interfaces\IPrivate.cs" />
+    <Compile Include="Interfaces\ISoldier.cs" />
+    <Compile Include="Interfaces\ISpecialisedSoldier.cs" />
+    <Compile Include="Interfaces\ISpy.cs" />
+    <Compile Include="Mission.cs" />
+    <Compile Include="Classes\Private.cs" />
+    <Compile Include="Repair.cs" />
+    <Compile Include="Classes\Soldier.cs" />
+    <Compile Include="Classes\SpecialisedSoldier.cs" />
+    <Compile Include="Classes\Spy.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
