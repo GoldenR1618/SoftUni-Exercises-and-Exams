@@ -40,8 +40,14 @@ public class StartUp
                         Repair currRepair = new Repair(args[i], int.Parse(args[j]));
                         repairs.Add(currRepair);
                     }
-                    ISoldier engineer = new Engineer(args[1], args[2], args[3], double.Parse(args[4]), args[5], repairs);
-                    list.Add(engineer);
+                    try
+                    {
+                        ISoldier engineer = new Engineer(args[1], args[2], args[3], double.Parse(args[4]), args[5], repairs);
+                        list.Add(engineer);
+                    }
+                    catch (Exception)
+                    {
+                    }
                     break;
 
                 case "Commando":
