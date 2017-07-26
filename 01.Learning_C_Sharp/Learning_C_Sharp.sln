@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20. Interfaces and Abstract
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21. Generics", "21. Generics\21. Generics.csproj", "{C8D8A6C5-15DA-45A8-ACA3-93E20327C13E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22. Iterators and Comparators", "22. Iterators and Comparators\22. Iterators and Comparators.csproj", "{9D27C7A4-12AF-4505-89B8-880529DDE4FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{C8D8A6C5-15DA-45A8-ACA3-93E20327C13E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8D8A6C5-15DA-45A8-ACA3-93E20327C13E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8D8A6C5-15DA-45A8-ACA3-93E20327C13E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D27C7A4-12AF-4505-89B8-880529DDE4FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D27C7A4-12AF-4505-89B8-880529DDE4FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D27C7A4-12AF-4505-89B8-880529DDE4FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D27C7A4-12AF-4505-89B8-880529DDE4FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
