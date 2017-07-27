@@ -1,13 +1,48 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 public class StartUp
 {
     public static void Main()
     {
+        ListyIterator<string> list = null;
 
+        string input = Console.ReadLine();
+
+        while (input != "END")
+        {
+            string[] args = input.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+            try
+            {
+                switch (args[0])
+                {
+                    case "Create":
+                        list = new ListyIterator<string>(args.Skip(1));
+                        break;
+
+                    case "Move":
+                        Console.WriteLine(list.Move());
+                        break;
+
+                    case "Print":
+                        list.Print();
+                        break;
+
+                    case "HasNext":
+                        Console.WriteLine(list.HasNext());
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+            catch (ArgumentException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            input = Console.ReadLine();
+        }
     }
 }
