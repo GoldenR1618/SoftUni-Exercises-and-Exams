@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class ListyIterator<T> : IEnumerable<T>
+internal class ListyIterator<T> : IEnumerable<T>
 {
     private IList<T> data;
     private int index;
