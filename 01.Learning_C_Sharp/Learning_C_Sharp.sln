@@ -49,6 +49,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21. Generics", "21. Generic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22. Iterators and Comparators", "22. Iterators and Comparators\22. Iterators and Comparators.csproj", "{9D27C7A4-12AF-4505-89B8-880529DDE4FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23. Enums and Attributes", "23. Enums and Attributes\23. Enums and Attributes.csproj", "{805AD501-62AF-4C8E-B657-F62603CF1224}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24. Patterns", "24. Patterns\24. Patterns.csproj", "{1C2D315B-317D-49AF-9A0E-7C1CD94C31EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +151,14 @@ Global
 		{9D27C7A4-12AF-4505-89B8-880529DDE4FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D27C7A4-12AF-4505-89B8-880529DDE4FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D27C7A4-12AF-4505-89B8-880529DDE4FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{805AD501-62AF-4C8E-B657-F62603CF1224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{805AD501-62AF-4C8E-B657-F62603CF1224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{805AD501-62AF-4C8E-B657-F62603CF1224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{805AD501-62AF-4C8E-B657-F62603CF1224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C2D315B-317D-49AF-9A0E-7C1CD94C31EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C2D315B-317D-49AF-9A0E-7C1CD94C31EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C2D315B-317D-49AF-9A0E-7C1CD94C31EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C2D315B-317D-49AF-9A0E-7C1CD94C31EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
