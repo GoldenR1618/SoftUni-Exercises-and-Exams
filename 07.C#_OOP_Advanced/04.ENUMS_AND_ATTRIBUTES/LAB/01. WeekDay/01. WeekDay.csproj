@@ -44,6 +44,9 @@
   <ItemGroup>
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Weekday.cs" />
+    <Compile Include="WeeklyCalendar.cs" />
+    <Compile Include="WeeklyEntry.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoffeeMachine.cs" />
+    <Compile Include="CoffeePrice.cs" />
+    <Compile Include="CoffeeType.cs" />
+    <Compile Include="Coin.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
