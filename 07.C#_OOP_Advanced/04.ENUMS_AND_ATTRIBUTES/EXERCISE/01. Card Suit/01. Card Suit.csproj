@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CardSuits.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

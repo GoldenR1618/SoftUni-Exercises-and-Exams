@@ -1,16 +1,13 @@
-﻿namespace CustomEnumAttribute
+﻿using System;
+
+public class StartUp
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
-    public class StartUp
+    public static void Main()
     {
-        public static void Main()
-        {
+        string targetEnum = Console.ReadLine();
 
-        }
+        Type enumType = targetEnum == "Rank" ? typeof(Rank) : typeof(Suit);
+
+        Console.WriteLine(string.Join(Environment.NewLine, enumType.GetCustomAttributes(false)));
     }
 }

@@ -1,16 +1,18 @@
-﻿namespace CardSuit
+﻿using System;
+
+public class StartUp
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
-    public class StartUp
+    public static void Main()
     {
-        public static void Main()
-        {
+        string input = Console.ReadLine();
 
+        Console.WriteLine($"{input}:");
+
+        Array suits = Enum.GetValues(typeof(CardSuits));
+
+        foreach (var suit in suits)
+        {
+            Console.WriteLine($"Ordinal value: {(int)suit}; Name value: {suit}");
         }
     }
 }
