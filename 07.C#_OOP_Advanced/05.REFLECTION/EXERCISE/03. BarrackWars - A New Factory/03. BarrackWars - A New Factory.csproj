@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BDF224CB-D1F7-4965-9ACD-8F3C74F42964}</ProjectGuid>
+    <ProjectGuid>{6B9565B7-DD7A-43D0-9F1F-F5DFB1EC09F3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_04.Collector</RootNamespace>
-    <AssemblyName>_04.Collector</AssemblyName>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_03BarracksFactory</RootNamespace>
+    <AssemblyName>03BarracksFactory</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,13 +43,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Hacker.cs" />
-    <Compile Include="Spy.cs" />
-    <Compile Include="StartUp.cs" />
+    <Compile Include="AppEntryPoint.cs" />
+    <Compile Include="Contracts\IAttacker.cs" />
+    <Compile Include="Contracts\ICommandInterpreter.cs" />
+    <Compile Include="Contracts\IDestroyable.cs" />
+    <Compile Include="Contracts\IExecutable.cs" />
+    <Compile Include="Contracts\IRepository.cs" />
+    <Compile Include="Contracts\IRunnable.cs" />
+    <Compile Include="Contracts\IUnit.cs" />
+    <Compile Include="Contracts\IUnitFactory.cs" />
+    <Compile Include="Core\Engine.cs" />
+    <Compile Include="Core\Factories\UnitFactory.cs" />
+    <Compile Include="Data\UnitRepository.cs" />
+    <Compile Include="Models\Units\Pikeman.cs" />
+    <Compile Include="Models\Units\Swordsman.cs" />
+    <Compile Include="Models\Units\Unit.cs" />
+    <Compile Include="Models\Units\Archer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\Commands\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>

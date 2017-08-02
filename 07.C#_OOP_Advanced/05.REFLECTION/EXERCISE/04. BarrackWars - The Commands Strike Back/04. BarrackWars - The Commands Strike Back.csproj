@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BDF224CB-D1F7-4965-9ACD-8F3C74F42964}</ProjectGuid>
+    <ProjectGuid>{99A9D13E-CABB-4ABB-8668-EEEE689578C7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_04.Collector</RootNamespace>
-    <AssemblyName>_04.Collector</AssemblyName>
+    <RootNamespace>_04.BarrackWars___The_Commands_Strike_Back</RootNamespace>
+    <AssemblyName>_04.BarrackWars___The_Commands_Strike_Back</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Hacker.cs" />
-    <Compile Include="Spy.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -99,12 +99,6 @@
             int number = 0;
             bool valueExists = student.TryGetValue("Ilian", out number);
             Console.WriteLine();
-
-            //Форматиране на Value-то със Select в string.Join
-            foreach (var company in companyProductAmount)
-            {
-                Console.WriteLine($"{company.Key}: {string.Join(", ", company.Value.Select(s => s.Key + "-" + s.Value))}"); //SoftUni: paper-600, chair-40, printer-1
-            }
         }
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BDF224CB-D1F7-4965-9ACD-8F3C74F42964}</ProjectGuid>
+    <ProjectGuid>{0180A653-8953-43B8-9ACA-4EEE111E9776}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_04.Collector</RootNamespace>
-    <AssemblyName>_04.Collector</AssemblyName>
+    <RootNamespace>_05.BarrackWars___Return_of_the_Dependencies</RootNamespace>
+    <AssemblyName>_05.BarrackWars___Return_of_the_Dependencies</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Hacker.cs" />
-    <Compile Include="Spy.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

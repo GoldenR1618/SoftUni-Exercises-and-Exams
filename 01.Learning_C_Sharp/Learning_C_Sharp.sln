@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23. Enums and Attributes", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24. Patterns", "24. Patterns\24. Patterns.csproj", "{1C2D315B-317D-49AF-9A0E-7C1CD94C31EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25. Reflection", "25. Reflection\25. Reflection.csproj", "{8FDD4C08-2021-4C94-8BC1-BDCA8F082233}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{1C2D315B-317D-49AF-9A0E-7C1CD94C31EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C2D315B-317D-49AF-9A0E-7C1CD94C31EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C2D315B-317D-49AF-9A0E-7C1CD94C31EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FDD4C08-2021-4C94-8BC1-BDCA8F082233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FDD4C08-2021-4C94-8BC1-BDCA8F082233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FDD4C08-2021-4C94-8BC1-BDCA8F082233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FDD4C08-2021-4C94-8BC1-BDCA8F082233}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
