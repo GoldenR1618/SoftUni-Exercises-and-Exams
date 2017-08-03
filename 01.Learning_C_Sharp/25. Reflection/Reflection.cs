@@ -31,6 +31,7 @@
             Type scType = typeof(SomeClass);
             SomeClass scInstance = (SomeClass)Activator.CreateInstance(scType);     //Инстанциране с базовият конструктор.
             SomeClass scInstanceCapacity = (SomeClass)Activator.CreateInstance(scType, "Ilian", 41);    //Инстанциране със кастъм конструктора.
+            SomeClass scInstanceCapacityTrue = (SomeClass)Activator.CreateInstance(scType, true);       //Насилствено инстанциране със къстъм конструктор без да му подаваме нищо.
 
             //Assembly.
             Assembly currentAssembly = Assembly.GetExecutingAssembly();
