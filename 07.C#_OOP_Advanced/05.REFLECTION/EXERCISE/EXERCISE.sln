@@ -9,10 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Black Box Integer", "02
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. BarrackWars - A New Factory", "03. BarrackWars - A New Factory\03. BarrackWars - A New Factory.csproj", "{6B9565B7-DD7A-43D0-9F1F-F5DFB1EC09F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. BarrackWars - The Commands Strike Back", "04. BarrackWars - The Commands Strike Back\04. BarrackWars - The Commands Strike Back.csproj", "{99A9D13E-CABB-4ABB-8668-EEEE689578C7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. BarrackWars - Return of the Dependencies", "05. BarrackWars - Return of the Dependencies\05. BarrackWars - Return of the Dependencies.csproj", "{0180A653-8953-43B8-9ACA-4EEE111E9776}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,14 +27,6 @@ Global
 		{6B9565B7-DD7A-43D0-9F1F-F5DFB1EC09F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B9565B7-DD7A-43D0-9F1F-F5DFB1EC09F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B9565B7-DD7A-43D0-9F1F-F5DFB1EC09F3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{99A9D13E-CABB-4ABB-8668-EEEE689578C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99A9D13E-CABB-4ABB-8668-EEEE689578C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99A9D13E-CABB-4ABB-8668-EEEE689578C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99A9D13E-CABB-4ABB-8668-EEEE689578C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0180A653-8953-43B8-9ACA-4EEE111E9776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0180A653-8953-43B8-9ACA-4EEE111E9776}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0180A653-8953-43B8-9ACA-4EEE111E9776}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0180A653-8953-43B8-9ACA-4EEE111E9776}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

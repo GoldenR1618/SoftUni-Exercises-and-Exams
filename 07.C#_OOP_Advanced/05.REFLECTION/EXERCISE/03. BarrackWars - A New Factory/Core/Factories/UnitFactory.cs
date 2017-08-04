@@ -2,13 +2,19 @@
 {
     using System;
     using Contracts;
+    using System.Reflection;
 
     public class UnitFactory : IUnitFactory
     {
         public IUnit CreateUnit(string unitType)
         {
-            //TODO: implement for Problem 3
-            throw new NotImplementedException();
+            Type classType = Type.GetType(" _03BarracksFactory.Models.Units." + unitType);
+
+            ConstructorInfo ctorInfo = classType.GetConstructor(BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public, null, Type.EmptyTypes, null);
+
+            IUnit unit = (IUnit)ctorInfo.Invoke(new object[] { });
+
+            return unit;
         }
     }
 }
