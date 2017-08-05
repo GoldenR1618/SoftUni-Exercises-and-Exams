@@ -55,6 +55,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24. Patterns", "24. Pattern
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25. Reflection", "25. Reflection\25. Reflection.csproj", "{8FDD4C08-2021-4C94-8BC1-BDCA8F082233}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "26. NUnit.Tests", "26. NUnit.Tests\26. NUnit.Tests.csproj", "{8EDF4429-251A-416D-BB68-93F227191BCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skeleton", "..\07.C#_OOP_Advanced\06.UNIT_TESTING\LAB\Skeleton\Skeleton.csproj", "{B7C13488-44A9-432D-A12C-ED88E9656144}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +169,14 @@ Global
 		{8FDD4C08-2021-4C94-8BC1-BDCA8F082233}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FDD4C08-2021-4C94-8BC1-BDCA8F082233}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FDD4C08-2021-4C94-8BC1-BDCA8F082233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7C13488-44A9-432D-A12C-ED88E9656144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7C13488-44A9-432D-A12C-ED88E9656144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7C13488-44A9-432D-A12C-ED88E9656144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7C13488-44A9-432D-A12C-ED88E9656144}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
