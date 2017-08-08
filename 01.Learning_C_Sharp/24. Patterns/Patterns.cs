@@ -14,6 +14,11 @@
             //  General repeatable solution to a commonly occurring problem in software design.
             //  Providing tested, proven development paradigms.
             //  Improves code readability for developers already familiar with the patterns.
+
+            //Adapter Pattern:
+            //  Convert the interface of a class into another interface clients expect. 
+            //  Wrap an existing class with a new interface.
+
         }
     }
 
