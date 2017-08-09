@@ -34,14 +34,9 @@
             this.currentPower -= hours;
         }
 
-        public override void Recharge()
+        public void Recharge()
         {
             this.currentPower = this.capacity;
-        }
-
-        public override void Sleep()
-        {
-            throw new InvalidOperationException("Robots cannot sleep");
         }
     }
 }

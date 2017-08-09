@@ -1,6 +1,6 @@
 ﻿namespace _04.Recharge
 {
-    public abstract class Worker : ISleeper, IRechargeable
+    public abstract class Worker
     {
         private string id;
         private int workingHours;
@@ -14,9 +14,5 @@
         {
             this.workingHours += hours;
         }
-
-        public abstract void Sleep();
-
-        public abstract void Recharge();
     }
 }

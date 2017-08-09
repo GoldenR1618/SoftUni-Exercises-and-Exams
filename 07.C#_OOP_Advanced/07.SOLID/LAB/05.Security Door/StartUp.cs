@@ -5,9 +5,8 @@
         public static void Main()
         {
             ScannerUI scannerUi = new ScannerUI();
-            KeyCardCheck keyCardCheck = new KeyCardCheck(scannerUi);
-            PinCodeCheck pinCodeCheck = new PinCodeCheck(scannerUi);
-            SecurityManager manager = new SecurityManager(keyCardCheck, pinCodeCheck);
+            IAccessProvider keyCardCheck = new KeyCardCheck(scannerUi);
+            SecurityManager manager = new SecurityManager(keyCardCheck);
             manager.Check();
         }
     }

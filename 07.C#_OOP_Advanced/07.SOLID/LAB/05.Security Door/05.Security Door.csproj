@@ -42,14 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ISecurityUI.cs" />
-    <Compile Include="KeyCardCheck.cs" />
-    <Compile Include="PinCodeCheck.cs" />
+    <Compile Include="Interfaces\IKeyCardUI.cs" />
+    <Compile Include="Interfaces\IAccessProvider.cs" />
+    <Compile Include="Interfaces\ISecurityUI.cs" />
+    <Compile Include="Interfaces\IPinCodeUI.cs" />
+    <Compile Include="Models\KeyCardCheck.cs" />
+    <Compile Include="Models\PinCodeCheck.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScannerUI.cs" />
-    <Compile Include="SecurityCheck.cs" />
-    <Compile Include="SecurityManager.cs" />
+    <Compile Include="Models\ScannerUI.cs" />
+    <Compile Include="Controllers\SecurityManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
