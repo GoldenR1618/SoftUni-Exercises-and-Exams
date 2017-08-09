@@ -1,6 +1,6 @@
 ﻿namespace _01.Stream_Progress
 {
-    public class Music
+    public class Music : IStreamable
     {
         private string artist;
         private string album;

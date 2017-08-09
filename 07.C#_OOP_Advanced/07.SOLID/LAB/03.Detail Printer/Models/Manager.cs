@@ -1,4 +1,6 @@
-﻿namespace _03.Detail_Printer
+﻿using System;
+
+namespace _03.Detail_Printer
 {
     using System.Collections.Generic;
 
@@ -10,5 +12,10 @@
         }
 
         public IReadOnlyCollection<string> Documents { get; set; }
+
+        public override string ToString()
+        {
+            return $"{this.Name}{Environment.NewLine}{string.Join(Environment.NewLine, Documents)}";
+        }
     }
 }

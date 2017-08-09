@@ -42,9 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DetailsPrinter.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="Manager.cs" />
+    <Compile Include="Models\DetailsPrinter.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Manager.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
