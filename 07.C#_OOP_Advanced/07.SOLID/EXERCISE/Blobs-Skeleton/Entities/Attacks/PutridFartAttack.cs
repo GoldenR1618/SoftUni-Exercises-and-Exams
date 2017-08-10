@@ -1,10 +1,10 @@
 ﻿namespace _02.Blobs.Entities.Attacks
 {
-    public class PutridFart : Attack
+    public class PutridFartAttack : Attack
     {
         public override void Execute(Blob attacker, Blob target)
         {
-            target.Respond(attacker.Damage);
+            target.Health -= attacker.Damage;
         }
     }
 }

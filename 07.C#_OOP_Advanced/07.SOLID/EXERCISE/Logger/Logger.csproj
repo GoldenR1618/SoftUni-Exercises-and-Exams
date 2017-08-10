@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4B37FFCA-A4C3-4C9A-B3F2-C70F9377F378}</ProjectGuid>
+    <ProjectGuid>{610B219A-D5F9-4257-AF2E-D53641A28B0B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_02.Blobs</RootNamespace>
-    <AssemblyName>02.Blobs</AssemblyName>
+    <RootNamespace>Logger</RootNamespace>
+    <AssemblyName>Logger</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,29 +42,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Controller.cs" />
     <Compile Include="Core\Engine.cs" />
-    <Compile Include="Core\GameActionsExecutor.cs" />
     <Compile Include="Core\IO\Reader.cs" />
     <Compile Include="Core\IO\Writer.cs" />
-    <Compile Include="Entities\Attacks\Attack.cs" />
-    <Compile Include="Entities\Attacks\BlobplodeAttack.cs" />
-    <Compile Include="Entities\Attacks\Factory\AttackFactory.cs" />
-    <Compile Include="Entities\Attacks\PutridFartAttack.cs" />
-    <Compile Include="Entities\Behaviors\AggressiveBehavior.cs" />
-    <Compile Include="Entities\Behaviors\Behavior.cs" />
-    <Compile Include="Entities\Behaviors\Factory\BehaviorFactory.cs" />
-    <Compile Include="Entities\Behaviors\InflatedBehavior.cs" />
-    <Compile Include="Entities\Blob.cs" />
-    <Compile Include="Interfaces\IAttack.cs" />
-    <Compile Include="Interfaces\IBehavior.cs" />
-    <Compile Include="Interfaces\IO\IReader.cs" />
-    <Compile Include="Interfaces\IO\IWriter.cs" />
+    <Compile Include="Entites\Appenders\Appender.cs" />
+    <Compile Include="Entites\Appenders\ConsoleAppender.cs" />
+    <Compile Include="Entites\Appenders\Factory\AppenderFactory.cs" />
+    <Compile Include="Entites\Appenders\FileAppender.cs" />
+    <Compile Include="Entites\Layouts\Factory\LayoutFactory.cs" />
+    <Compile Include="Entites\Layouts\SimpleLayout.cs" />
+    <Compile Include="Entites\Layouts\XmlLayout.cs" />
+    <Compile Include="Entites\LogFile.cs" />
+    <Compile Include="Entites\Logger.cs" />
+    <Compile Include="Enums\ReportLevel.cs" />
+    <Compile Include="Interfaces\IAppender.cs" />
+    <Compile Include="Interfaces\ILayout.cs" />
+    <Compile Include="Interfaces\ILogger.cs" />
+    <Compile Include="Interfaces\IReader.cs" />
+    <Compile Include="Interfaces\IWriter.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

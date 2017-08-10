@@ -1,6 +1,6 @@
 ﻿namespace _02.Blobs.Entities.Attacks
 {
-    using _02.Blobs.Interfaces;
+    using Interfaces;
 
     public abstract class Attack : IAttack
     {

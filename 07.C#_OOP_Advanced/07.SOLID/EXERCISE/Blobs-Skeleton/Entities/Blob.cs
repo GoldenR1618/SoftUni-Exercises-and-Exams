@@ -1,30 +1,28 @@
 ﻿namespace _02.Blobs.Entities
 {
-    using _02.Blobs.Entities.Attacks;
-    using _02.Blobs.Entities.Behaviors;
+    using System;
+    using Interfaces;
 
     public class Blob
     {
         private int health;
-        private Attack attack;
-        private int triggerCount;
-
+        private IAttack attack;
+        private IBehavior behavior;
         private int initialHealth;
-        private int initialDamage;
+        private bool behaviourTriggeredInThisTurn;
 
-        public Blob(string name, int health, int damage, Behavior behavior, Attack attack)
+        public Blob(string name, int health, int damage, IBehavior behavior, IAttack attack)
         {
-            this.Name = name;
-            this.Health = health;
-            this.Damage = damage;
-            this.Behavior = behavior;
+            this.behavior = behavior;
             this.attack = attack;
 
             this.initialHealth = health;
-            this.initialDamage = damage;
+            this.Name = name;
+            this.Health = health;
+            this.Damage = damage;
         }
 
-        public string Name { get; private set; }
+        public string Name { get; }
 
         public int Health
         {
@@ -37,96 +35,63 @@
                 {
                     this.health = 0;
                 }
-
-                if (this.health <= this.initialHealth / 2 && !this.Behavior.IsTriggered)
-                {
-                    this.TriggerBehavior();
-                }
+                
+                this.CheckForBehaviorTrigger();
             }
         }
-
-        public Behavior Behavior { get; private set; }
 
         public int Damage { get; set; }
 
+        private void CheckForBehaviorTrigger()
+        {
+            if (this.Health <= this.initialHealth / 2 && !this.behavior.IsTriggered)
+            {
+                this.TriggerBehavior();
+            }
+        }
+
+        private void TriggerBehavior()
+        {
+            if (this.behavior.IsTriggered)
+            {
+                throw new ArgumentException();
+            }
+
+            this.behavior.Trigger(this);
+            this.behaviourTriggeredInThisTurn = true;
+        }
+
+        public bool IsAlive()
+        {
+            return this.Health > 0;
+        }
+
         public void Attack(Blob target)
         {
-            if (this.attack is PutridFart)
+            if (target.IsAlive() && this.IsAlive())
             {
-                this.AttackAffectTarget(this, target);
+                this.attack.Execute(this, target);
             }
         }
-
-        public void Respond(int damage)
+        
+        public void MoveToNextTurn()
         {
-            this.Health -= damage;
-        }
-
-        public void TriggerBehavior()
-        {
-            if (this.Behavior is Aggressive) {
-                if (this.Behavior.IsTriggered)
-                {
-                    ((Aggressive) this.Behavior).IsTriggered = true;
-                    this.ApplyAgressiveTriggerEffect();
-                }
-            }
-        }
-
-        public void Update()
-        {
-            if (this.Behavior.IsTriggered)
+            if (this.behavior.IsTriggered && !this.behaviourTriggeredInThisTurn)
             {
-                if (this.Behavior is Aggressive) {
-                    if (this.Behavior.IsTriggered)
-                    {
-                        ((Aggressive) this.Behavior).IsTriggered = true;
-                        this.ApplyAgressiveTriggerEffect();
-                    }
-                }
+                this.behavior.ApplyPostTriggerEffect(this);
             }
-        }
 
-        private void AttackAffectSource(Blob source)
-        {
-            source.Health = source.Health - source.Health / 2;
-        }
-
-        private void AttackAffectTarget(Blob source, Blob target)
-        {
-            target.Respond(source.Damage * 2);
-        }
-
-        private void ApplyAgressiveTriggerEffect()
-        {
-            this.Damage *= 2;
-        }
-
-        private void ApplyAgressiveRecurrentEffect()
-        {
-            if (((Aggressive) this.Behavior).ToDelayRecurrentEffect)
-            {
-                ((Aggressive) this.Behavior).ToDelayRecurrentEffect = false;
-            }
-            else
-            {
-                this.Damage -= 5;
-
-                if (this.Damage <= this.initialHealth)
-                {
-                    this.Damage = this.initialDamage;
-                }
-            }
+            this.behaviourTriggeredInThisTurn = false;
         }
 
         public override string ToString()
         {
             if (this.Health <= 0)
             {
-                return $"IBlob {this.Name} KILLED";
+                return $"Blob {this.Name} KILLED";
             }
 
-            return $"IBlob {this.Name}: {this.Health} HP, {this.Damage} Damage";
+            return $"Blob {this.Name}: {this.Health} HP, {this.Damage} Damage";
         }
     }
 }

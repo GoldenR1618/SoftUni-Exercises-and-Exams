@@ -1,18 +1,20 @@
 ﻿namespace _02.Blobs.Entities.Behaviors
 {
-    public abstract class Behavior
+    using Interfaces;
+
+    public abstract class Behavior : IBehavior
     {
-        public Behavior()
+        protected Behavior()
         {
-            this.ToDelayRecurrentEffect = true;
+            this.IsTriggered = false;
         }
 
-        public bool IsTriggered { get; set; }
+        protected abstract void ApplyTriggerEffect(Blob source);
 
-        public bool ToDelayRecurrentEffect { get; set; }
+        public bool IsTriggered { get; protected set; }
 
         public abstract void Trigger(Blob source);
 
-        public abstract void ApplyRecurrentEffect(Blob source);
+        public abstract void ApplyPostTriggerEffect(Blob source);
     }
 }
