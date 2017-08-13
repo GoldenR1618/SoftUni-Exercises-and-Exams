@@ -57,9 +57,9 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\07.C#_OOP_Advanced\06.UNIT_TESTING\LAB\Skeleton\Skeleton.csproj">
+    <ProjectReference Include="..\26. Skeleton\26. Skeleton.csproj">
       <Project>{b7c13488-44a9-432d-a12c-ed88e9656144}</Project>
-      <Name>Skeleton</Name>
+      <Name>26. Skeleton</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

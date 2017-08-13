@@ -1,4 +1,4 @@
-﻿namespace _27.SOLID
+﻿namespace SOLID
 {
     using System;
     using System.Collections.Generic;
