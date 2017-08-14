@@ -1,14 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 
 public class StartUp
 {
-    public static void Main()
+    public static void Main(string[] args)
     {
+        Dictionary<char, IStrategy> strategies = new Dictionary<char, IStrategy>()
+        {
+            { '+', new AdditionStrategy()},
+            { '-', new SubtractionStrategy()},
+            { '*', new MultiplyStrategy()},
+            { '/', new DivideStrategy()},
+        };
 
+        PrimitiveCalculator calc = new PrimitiveCalculator(strategies['+'], strategies);
+        string[] input = Console.ReadLine().Split();
+        while (input[0] != "End")
+        {
+            if (input[0] == "mode")
+            {
+                calc.ChangeStrategy(char.Parse(input[1]));
+            }
+            else
+            {
+                Console.WriteLine(calc.performCalculation(int.Parse(input[0]), int.Parse(input[1])));
+            }
+
+            input = Console.ReadLine().Split();
+        }
     }
 }

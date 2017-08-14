@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Footman.cs" />
+    <Compile Include="Entities\King.cs" />
+    <Compile Include="Entities\RoyalGuard.cs" />
+    <Compile Include="Entities\Soldier.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

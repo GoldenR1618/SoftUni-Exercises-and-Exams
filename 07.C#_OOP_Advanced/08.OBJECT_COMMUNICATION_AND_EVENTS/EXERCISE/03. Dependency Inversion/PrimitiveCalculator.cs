@@ -1,44 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 public class PrimitiveCalculator
 {
-    private bool isAddition;
-    private AdditionStrategy additionStrategy;
-    private SubtractionStrategy subtractionStrategy;
+    private IStrategy strategy;
+    private IDictionary<char, IStrategy> strategies;
 
-    public PrimitiveCalculator()
+    public PrimitiveCalculator(IStrategy strategy, IDictionary<char, IStrategy> strategies)
     {
-        this.additionStrategy = new AdditionStrategy();
-        this.subtractionStrategy = new SubtractionStrategy();
-        this.isAddition = true;
+        this.strategy = strategy;
+        this.strategies = strategies;
     }
 
-    public void changeStrategy(char @operator)
+    public void ChangeStrategy(char @operator)
     {
-        switch (@operator)
-        {
-            case '+':
-                this.isAddition = true;
-                break;
-            case '-':
-                this.isAddition = false;
-                break;
-        }
+        this.strategy = this.strategies[@operator];
     }
 
     public int performCalculation(int firstOperand, int secondOperand)
     {
-        if (this.isAddition)
-        {
-            return additionStrategy.Calculate(firstOperand, secondOperand);
-        }
-        else
-        {
-            return subtractionStrategy.Calculate(firstOperand, secondOperand);
-        }
+        return this.strategy.Calculate(firstOperand, secondOperand);
     }
 }
