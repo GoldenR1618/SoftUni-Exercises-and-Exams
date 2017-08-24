@@ -1,0 +1,10 @@
+8.60 kg of PlasticBottles successfully processed!
+7.56 kg of OldBooks successfully processed!
+377.13 kg of WindowGlass successfully processed!
+1.77 kg of PaperBags successfully processed!
+Energy: 1152.74 Capital: 2744.55
+9.70 kg of PlasticBottles successfully processed!
+10.56 kg of OldBooks successfully processed!
+477.13 kg of WindowGlass successfully processed!
+0.77 kg of PaperBags successfully processed!
+Energy: 844.19 Capital: 9461.72

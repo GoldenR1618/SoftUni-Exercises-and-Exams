@@ -1,0 +1,11 @@
+ProcessGarbage Belts|3.60|8.31|Storable
+ProcessGarbage PaperPlanes|12.56|3.91|Recyclable
+ProcessGarbage TreeShavings|293.56|3.713|Burnable
+ProcessGarbage ChurchGlass|377.13|1.14|Recyclable
+Status
+ProcessGarbage OldBooks|35|7.91|Recyclable
+Status
+ProcessGarbage TreeShavings|300.56|5.713|Burnable
+ProcessGarbage ChurchGlass|370.13|5.14|Recyclable
+Status
+TimeToRecycle

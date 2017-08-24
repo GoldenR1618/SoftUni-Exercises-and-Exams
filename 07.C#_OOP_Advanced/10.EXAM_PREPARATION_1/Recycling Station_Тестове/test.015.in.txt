@@ -1,0 +1,37 @@
+ProcessGarbage TreeShavings|13.56|0.463|Burnable
+ProcessGarbage ShatteredGlass|1.77|830.18|Recyclable
+Status
+ChangeManagementRequirement 145|-125|Storable
+ProcessGarbage OldBooks|19|0.91|Recyclable
+Status
+ProcessGarbage Tar|18.13|3.14|Storable
+ChangeManagementRequirement -810|1000|Recyclable
+ProcessGarbage Belts|8.60|5.31|Storable
+ProcessGarbage PaperPlanes|7.56|0.91|Recyclable
+ProcessGarbage TreeShavings|293.56|3.713|Burnable
+ProcessGarbage ChurchGlass|377.13|1.14|Recyclable
+Status
+ChangeManagementRequirement -113|16600|Burnable
+ProcessGarbage CardPyramid|43.1387|2.31|Burnable
+Status
+ProcessGarbage FossilFuels|19.99|0.99|Burnable
+Status
+ProcessGarbage TreeShavings|13.56|0.463|Burnable
+ProcessGarbage ShatteredGlass|1.77|830.18|Recyclable
+Status
+ChangeManagementRequirement 145|-125|Storable
+ProcessGarbage OldBooks|19|0.91|Recyclable
+Status
+ProcessGarbage Tar|18.13|3.14|Storable
+ChangeManagementRequirement -810|1000|Recyclable
+ProcessGarbage Belts|8.60|5.31|Storable
+ProcessGarbage PaperPlanes|7.56|0.91|Recyclable
+ProcessGarbage TreeShavings|293.56|3.713|Burnable
+ProcessGarbage ChurchGlass|377.13|1.14|Recyclable
+Status
+ChangeManagementRequirement -180|400000|Burnable
+ProcessGarbage CardPyramid|43.1387|2.31|Burnable
+Status
+ProcessGarbage FossilFuels|19.99|0.99|Burnable
+Status
+TimeToRecycle

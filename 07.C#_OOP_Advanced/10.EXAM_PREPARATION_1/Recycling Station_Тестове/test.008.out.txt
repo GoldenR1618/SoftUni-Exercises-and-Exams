@@ -1,0 +1,13 @@
+4.25 kg of Belts successfully processed!
+15.24 kg of PaperPlanes successfully processed!
+Energy: -23.63 Capital: 6067.41
+400.30 kg of TreeShavings successfully processed!
+250.13 kg of ChurchGlass successfully processed!
+Energy: 1422.34 Capital: 106119.41
+35.00 kg of OldBooks successfully processed!
+Energy: 1283.91 Capital: 120119.41
+300.56 kg of TreeShavings successfully processed!
+325.13 kg of ChurchGlass successfully processed!
+377.56 kg of ChurchGlass successfully processed!
+370.13 kg of ChurchGlass successfully processed!
+Energy: 3037.91 Capital: 398223.41

@@ -1,0 +1,16 @@
+ProcessGarbage Tar|18.13|3.14|Storable
+Status
+ProcessGarbage Tar|17.12|3.14|Storable
+ProcessGarbage Tar|25.01|2.14|Storable
+ProcessGarbage Tar|15.08|5.18|Storable
+ProcessGarbage CardPyramid|43.1387|2.31|Burnable
+Status
+ProcessGarbage OldBooks|19|0.91|Recyclable
+ProcessGarbage OldBooks|35|0.23|Recyclable
+ProcessGarbage OldBooks|15|1.15|Recyclable
+Status
+ProcessGarbage OldBooks|33|3.50|Recyclable
+ProcessGarbage OldBooks|18|2.54|Recyclable
+ProcessGarbage OldBooks|50|0.18|Recyclable
+Status
+TimeToRecycle

@@ -1,0 +1,10 @@
+Management requirement changed!
+Processing Denied!
+Energy: 0.00 Capital: 0.00
+Management requirement changed!
+Processing Denied!
+Energy: 0.00 Capital: 0.00
+Management requirement changed!
+Processing Denied!
+1.00 kg of Try1 successfully processed!
+Energy: -0.50 Capital: 400.00

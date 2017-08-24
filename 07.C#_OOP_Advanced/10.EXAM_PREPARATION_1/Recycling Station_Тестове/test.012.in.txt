@@ -1,0 +1,12 @@
+ChangeManagementRequirement -2000|-15000|Recyclable
+ProcessGarbage PlasticBottles|8.60|5.31|Burnable
+ProcessGarbage OldBooks|7.56|0.91|Recyclable
+ProcessGarbage WindowGlass|377.13|1.14|Storable
+ProcessGarbage PaperBags|1.77|830.18|Burnable
+Status
+ChangeManagementRequirement 0|20000|Storable
+ProcessGarbage Goldmine|43.1387|2.31|Recyclable
+Status
+ProcessGarbage Tar|18.13|3.14|Storable
+Status
+TimeToRecycle

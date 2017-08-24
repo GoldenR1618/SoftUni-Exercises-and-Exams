@@ -1,0 +1,6 @@
+ProcessGarbage Try1|1|1|Storable
+ProcessGarbage Try2|13.445|1.667|Storable
+ProcessGarbage Try3|955.13|0.135|Storable
+ProcessGarbage Try4|0.25|315.13|Storable
+Status
+TimeToRecycle

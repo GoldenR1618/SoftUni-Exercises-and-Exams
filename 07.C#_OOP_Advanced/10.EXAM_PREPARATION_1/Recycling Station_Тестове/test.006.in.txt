@@ -1,0 +1,11 @@
+ProcessGarbage PlasticBottles|8.60|5.31|Burnable
+ProcessGarbage OldBooks|7.56|0.91|Recyclable
+ProcessGarbage WindowGlass|377.13|1.14|Storable
+ProcessGarbage PaperBags|1.77|830.18|Burnable
+Status
+ProcessGarbage PlasticBottles|9.70|4.35|Recyclable
+ProcessGarbage OldBooks|10.56|1.91|Recyclable
+ProcessGarbage WindowGlass|477.13|3.14|Storable
+ProcessGarbage PaperBags|0.77|825.18|Storable
+Status
+TimeToRecycle

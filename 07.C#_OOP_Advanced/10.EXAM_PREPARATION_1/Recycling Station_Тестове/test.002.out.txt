@@ -1,0 +1,7 @@
+Energy: 0.00 Capital: 0.00
+333.00 kg of Burn successfully processed!
+666.00 kg of Baby successfully processed!
+999.00 kg of Burn successfully processed!
+0.01 kg of Store successfully processed!
+2222.22 kg of BadDontBurn successfully processed!
+Energy: -22225.34 Capital: 121954.63

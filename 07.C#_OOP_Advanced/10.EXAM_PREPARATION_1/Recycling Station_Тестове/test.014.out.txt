@@ -1,0 +1,18 @@
+13.56 kg of TreeShavings successfully processed!
+1.77 kg of ShatteredGlass successfully processed!
+Energy: -729.69 Capital: 708.00
+Management requirement changed!
+19.00 kg of OldBooks successfully processed!
+Energy: -738.33 Capital: 8308.00
+Processing Denied!
+Management requirement changed!
+8.60 kg of Belts successfully processed!
+7.56 kg of PaperPlanes successfully processed!
+293.56 kg of TreeShavings successfully processed!
+377.13 kg of ChurchGlass successfully processed!
+Energy: -90.68 Capital: 162154.32
+Management requirement changed!
+43.14 kg of CardPyramid successfully processed!
+Energy: -10.96 Capital: 162154.32
+19.99 kg of FossilFuels successfully processed!
+Energy: 4.87 Capital: 162154.32

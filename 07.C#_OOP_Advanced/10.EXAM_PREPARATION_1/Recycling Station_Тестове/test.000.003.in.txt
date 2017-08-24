@@ -1,0 +1,9 @@
+ProcessGarbage Glass|10|1.14|Recyclable
+ProcessGarbage Wood|33.156|3.657|Burnable
+ProcessGarbage UsedShampooBottles|2.25|1.57|Storable
+Status
+ChangeManagementRequirement 500|3000|Storable
+ProcessGarbage OldTires|13.88|5.99|Storable
+ProcessGarbage CrumbledPaper|3.68|0.45|Recyclable
+Status
+TimeToRecycle

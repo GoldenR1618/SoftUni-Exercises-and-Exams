@@ -1,0 +1,6 @@
+15.32 kg of TreeShavings successfully processed!
+3.77 kg of ShatteredGlass successfully processed!
+Energy: -1599.42 Capital: 1508.00
+18.88 kg of OldTires successfully processed!
+55.14 kg of CardPyramid successfully processed!
+Energy: -1470.57 Capital: 1422.22

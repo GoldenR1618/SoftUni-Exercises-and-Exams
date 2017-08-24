@@ -1,0 +1,8 @@
+10.00 kg of Glass successfully processed!
+33.16 kg of Wood successfully processed!
+2.25 kg of UsedShampooBottles successfully processed!
+Energy: 90.84 Capital: 3997.70
+Management requirement changed!
+Processing Denied!
+3.68 kg of CrumbledPaper successfully processed!
+Energy: 90.01 Capital: 5469.70

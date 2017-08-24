@@ -1,0 +1,8 @@
+Status
+ProcessGarbage Burn|333|33.33|Burnable
+ProcessGarbage Baby|666|6.66|Recyclable
+ProcessGarbage Burn|999|0.003|Burnable
+ProcessGarbage Store|0.008|180|Storable
+ProcessGarbage BadDontBurn|2222.222|100|Storable
+Status
+TimeToRecycle

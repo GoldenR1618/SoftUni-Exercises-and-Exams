@@ -1,0 +1,5 @@
+ProcessGarbage Rubber|5.55|2.22|Storable
+ProcessGarbage Papier|10.10|10.10|Recyclable
+ProcessGarbage MoreRubber|13.13|1.131|Storable
+Status
+TimeToRecycle

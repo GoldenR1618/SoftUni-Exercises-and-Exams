@@ -1,0 +1,11 @@
+ChangeManagementRequirement -10|20|Recyclable
+ProcessGarbage Try1|1|1|Recyclable
+Status
+ChangeManagementRequirement 200|-500|Storable
+ProcessGarbage Try1|1|1|Storable
+Status
+ChangeManagementRequirement 15|15|Burnable
+ProcessGarbage Try1|1|1|Burnable
+ProcessGarbage Try1|1|1|Recyclable
+Status
+TimeToRecycle

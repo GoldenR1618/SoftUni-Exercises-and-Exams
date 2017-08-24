@@ -1,0 +1,6 @@
+10.00 kg of Glass successfully processed!
+33.16 kg of Wood successfully processed!
+2.25 kg of UsedShampooBottles successfully processed!
+Energy: 90.84 Capital: 3997.70
+13.88 kg of OldTires successfully processed!
+Energy: 80.03 Capital: 3943.66

@@ -1,0 +1,4 @@
+5.55 kg of Rubber successfully processed!
+10.10 kg of Papier successfully processed!
+13.13 kg of MoreRubber successfully processed!
+Energy: -54.54 Capital: 4022.34

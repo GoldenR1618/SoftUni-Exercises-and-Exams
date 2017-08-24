@@ -1,0 +1,5 @@
+1.00 kg of Try1 successfully processed!
+13.45 kg of Try2 successfully processed!
+955.13 kg of Try3 successfully processed!
+0.25 kg of Try4 successfully processed!
+Energy: -30.05 Capital: -150.24

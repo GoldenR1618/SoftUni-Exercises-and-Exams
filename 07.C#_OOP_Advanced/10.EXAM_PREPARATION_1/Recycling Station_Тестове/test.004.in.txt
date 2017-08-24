@@ -1,0 +1,8 @@
+ProcessGarbage SetUp|1|20|Recyclable
+ProcessGarbage Try2|3|3|Burnable
+Status
+ProcessGarbage ThisShouldPassExactly|1|20.0001|Recyclable
+ProcessGarbage Try1|1|1|Storable
+Status
+ProcessGarbage WontPass|1|1|Recyclable
+TimeToRecycle

@@ -1,0 +1,7 @@
+ProcessGarbage TreeShavings|15.32|0.254|Burnable
+ProcessGarbage ShatteredGlass|3.77|850.15|Recyclable
+Status
+ProcessGarbage OldTires|18.88|6.99|Storable
+ProcessGarbage CardPyramid|55.1387|3.31|Burnable
+Status
+TimeToRecycle

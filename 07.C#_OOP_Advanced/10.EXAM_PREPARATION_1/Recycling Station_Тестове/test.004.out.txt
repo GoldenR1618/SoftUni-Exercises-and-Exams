@@ -1,0 +1,7 @@
+1.00 kg of SetUp successfully processed!
+3.00 kg of Try2 successfully processed!
+Energy: -2.80 Capital: 400.00
+1.00 kg of ThisShouldPassExactly successfully processed!
+1.00 kg of Try1 successfully processed!
+Energy: -12.93 Capital: 799.35
+1.00 kg of WontPass successfully processed!

@@ -1,0 +1,15 @@
+18.13 kg of Tar successfully processed!
+Energy: -7.40 Capital: -37.00
+17.12 kg of Tar successfully processed!
+25.01 kg of Tar successfully processed!
+15.08 kg of Tar successfully processed!
+43.14 kg of CardPyramid successfully processed!
+Energy: 48.22 Capital: -157.51
+19.00 kg of OldBooks successfully processed!
+35.00 kg of OldBooks successfully processed!
+15.00 kg of OldBooks successfully processed!
+Energy: 26.92 Capital: 27442.49
+33.00 kg of OldBooks successfully processed!
+18.00 kg of OldBooks successfully processed!
+50.00 kg of OldBooks successfully processed!
+Energy: -58.19 Capital: 67842.49
